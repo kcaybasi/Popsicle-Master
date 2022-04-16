@@ -15,7 +15,7 @@ C:/Users/kfurk/Desktop/Summer Paint Git/Summer Paint
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-60579
+58567
 Successfully changed project path to: C:/Users/kfurk/Desktop/Summer Paint Git/Summer Paint
 C:/Users/kfurk/Desktop/Summer Paint Git/Summer Paint
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ C:/Users/kfurk/Desktop/Summer Paint Git/Summer Paint
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 66.41 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 69.51 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.0f1 (6eacc8284459)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.0f1/Editor/Data/Resources/UnitySubsystems
@@ -63,93 +63,93 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.0f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.0f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56368
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56140
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.0f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.0f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.007005 seconds.
+Registered in 0.007591 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 78.98 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 68.94 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.566 seconds
+- Completed reload, in  0.593 seconds
 Domain Reload Profiling:
-	ReloadAssembly (567ms)
-		BeginReloadAssembly (63ms)
+	ReloadAssembly (593ms)
+		BeginReloadAssembly (92ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (414ms)
-			LoadAssemblies (61ms)
+		EndReloadAssembly (399ms)
+			LoadAssemblies (90ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (82ms)
+			SetupTypeCache (101ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (23ms)
-			SetupLoadedEditorAssemblies (268ms)
+			SetupLoadedEditorAssemblies (232ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (62ms)
+				InitializePlatformSupportModulesInManaged (48ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (79ms)
+				RefreshPlugins (69ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (80ms)
-				ProcessInitializeOnLoadMethodAttributes (46ms)
+				ProcessInitializeOnLoadAttributes (78ms)
+				ProcessInitializeOnLoadMethodAttributes (36ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.004915 seconds.
+Registered in 0.004526 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\kfurk\Desktop\Summer Paint Git\Summer Paint\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory is not a mono symbol file
 Symbol file LoadedFromMemory doesn't match image C:\Users\kfurk\Desktop\Summer Paint Git\Summer Paint\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 0.47 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.51 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.014 seconds
+- Completed reload, in  0.970 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1015ms)
-		BeginReloadAssembly (211ms)
+	ReloadAssembly (971ms)
+		BeginReloadAssembly (210ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
+			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (131ms)
-		EndReloadAssembly (707ms)
-			LoadAssemblies (97ms)
+		EndReloadAssembly (660ms)
+			LoadAssemblies (91ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (230ms)
+			SetupTypeCache (205ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (53ms)
-			SetupLoadedEditorAssemblies (284ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (291ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (12ms)
+				InitializePlatformSupportModulesInManaged (15ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (70ms)
-				ProcessInitializeOnLoadAttributes (176ms)
-				ProcessInitializeOnLoadMethodAttributes (18ms)
-				AfterProcessingInitializeOnLoad (7ms)
+				BeforeProcessingInitializeOnLoad (75ms)
+				ProcessInitializeOnLoadAttributes (172ms)
+				ProcessInitializeOnLoadMethodAttributes (20ms)
+				AfterProcessingInitializeOnLoad (8ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (4ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.57 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 1.05 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3225 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 23 unused Assets / (112.4 KB). Loaded Objects now: 3687.
-Memory consumption went from 112.1 MB to 112.0 MB.
-Total: 2.958400 ms (FindLiveObjects: 0.405200 ms CreateObjectMapping: 0.099200 ms MarkObjects: 2.353400 ms  DeleteObjects: 0.099800 ms)
+Unloading 3377 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 26 unused Assets / (113.3 KB). Loaded Objects now: 3842.
+Memory consumption went from 131.9 MB to 131.8 MB.
+Total: 4.529100 ms (FindLiveObjects: 0.449600 ms CreateObjectMapping: 0.312000 ms MarkObjects: 3.545500 ms  DeleteObjects: 0.218400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -164,7 +164,303 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 795332.492248 seconds.
-  path: Assets/Scenes/MainScene.unity
-  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/MainScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c46a3c8cd777ef06ef45b6860d2a7338') in 0.011969 seconds 
+  Time since last request: 98309.793103 seconds.
+  path: Assets/Textures/BeachBackground.png
+  artifactKey: Guid(0e509ef9583e20a449381348b4eb1c61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/BeachBackground.png using Guid(0e509ef9583e20a449381348b4eb1c61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1b88279fd55f938b0ea61cbd9ab5389') in 0.100436 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 212.961588 seconds.
+  path: Assets/Textures/98681.png
+  artifactKey: Guid(b5158f35cd3a57146ba5bd6f2db69a51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/98681.png using Guid(b5158f35cd3a57146ba5bd6f2db69a51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e91df572d8c36936f34ea506c50be558') in 0.061187 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 284.691090 seconds.
+  path: Assets/Textures/4d27c1e871edc0ba585fc3186f196665.jpg
+  artifactKey: Guid(2efc683f68cac95429c0da6dd5945af8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/4d27c1e871edc0ba585fc3186f196665.jpg using Guid(2efc683f68cac95429c0da6dd5945af8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f5881ce0cd4c2a972d4ba31a159c970') in 0.057753 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 42.467288 seconds.
+  path: Assets/Textures/4d27c1e871edc0ba585fc3186f196665.jpg
+  artifactKey: Guid(2efc683f68cac95429c0da6dd5945af8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/4d27c1e871edc0ba585fc3186f196665.jpg using Guid(2efc683f68cac95429c0da6dd5945af8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab74b4bd65f647fe564e0c526248780d') in 0.199451 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 65.170943 seconds.
+  path: Assets/Textures/BeachBackground.png
+  artifactKey: Guid(0e509ef9583e20a449381348b4eb1c61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/BeachBackground.png using Guid(0e509ef9583e20a449381348b4eb1c61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41a5c42d1d249763c3dbaa8bed0e5b99') in 0.033997 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.944583 seconds.
+  path: Assets/Textures/98681.png
+  artifactKey: Guid(b5158f35cd3a57146ba5bd6f2db69a51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/98681.png using Guid(b5158f35cd3a57146ba5bd6f2db69a51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79f286cedd099037a18010fc7f9de1a7') in 0.166832 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.653255 seconds.
+  path: Assets/Textures/BeachBackground.jpg
+  artifactKey: Guid(2efc683f68cac95429c0da6dd5945af8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/BeachBackground.jpg using Guid(2efc683f68cac95429c0da6dd5945af8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5eee5ed7bfbd5a60d5d8f69030d647db') in 0.131494 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 68.493996 seconds.
+  path: Assets/AssetPacks/Animated Character 2/Models
+  artifactKey: Guid(c64878e08083112419a8c7fb27ca9064) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/Animated Character 2/Models using Guid(c64878e08083112419a8c7fb27ca9064) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1710ba5d283d6c01500fef61cf6d9fb') in 0.006894 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.361728 seconds.
+  path: Assets/AssetPacks/Animated Character 2/Models/Materials
+  artifactKey: Guid(ea1739855616a8641979f4626da2e394) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/Animated Character 2/Models/Materials using Guid(ea1739855616a8641979f4626da2e394) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16946eeb83ee1e22d0e3a7e40d2785b4') in 0.006735 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.345322 seconds.
+  path: Assets/AssetPacks/Animated Character 2/Models/characterMedium.fbx
+  artifactKey: Guid(2db7e17401e08b94697ecd7acce75ab1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/Animated Character 2/Models/characterMedium.fbx using Guid(2db7e17401e08b94697ecd7acce75ab1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfd78283c8f523d3c490cc8ab62b4944') in 0.128387 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 311.603942 seconds.
+  path: Assets/AssetPacks/Animated Character 2/Skins/criminalMaleA.png
+  artifactKey: Guid(df17468a5a3ff4540a67b973b0b0cce7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/Animated Character 2/Skins/criminalMaleA.png using Guid(df17468a5a3ff4540a67b973b0b0cce7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7a79317178ad02dc048e3fbd2e0f50f') in 0.043056 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.898088 seconds.
+  path: Assets/AssetPacks/Animated Character 2/Skins/cyborgFemaleA.png
+  artifactKey: Guid(bea8f9d7beb292a45ba43e1a4b5dd301) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/Animated Character 2/Skins/cyborgFemaleA.png using Guid(bea8f9d7beb292a45ba43e1a4b5dd301) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb34e3b216a05c52fbc79dff8d20076c') in 0.027188 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/AssetPacks/Animated Character 2/Skins/skaterMaleA.png
+  artifactKey: Guid(db301ba1ce6f9cb4a85f049d434185f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/Animated Character 2/Skins/skaterMaleA.png using Guid(db301ba1ce6f9cb4a85f049d434185f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd972669df781536923bbc9b7c6490837') in 0.034321 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000095 seconds.
+  path: Assets/LiquidVolume/Resources/Textures/MagicRT.renderTexture
+  artifactKey: Guid(8891ecde61eae462ba706997c05eb2f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LiquidVolume/Resources/Textures/MagicRT.renderTexture using Guid(8891ecde61eae462ba706997c05eb2f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '901530aa69e59d2f742c6929930d5da8') in 0.031212 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/LiquidVolume/Resources/Textures/Reflections.cubemap
+  artifactKey: Guid(a730bb546543847cfb568b69de54fdbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LiquidVolume/Resources/Textures/Reflections.cubemap using Guid(a730bb546543847cfb568b69de54fdbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b5af4b6504bab3a0e4090dacc3870d4') in 0.040372 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/AssetPacks/Animated Character 2/Skins/skaterFemaleA.png
+  artifactKey: Guid(65cf960b0a116654bbd4a2d8bf1e8735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/Animated Character 2/Skins/skaterFemaleA.png using Guid(65cf960b0a116654bbd4a2d8bf1e8735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3354a5db1bcb5fe33c09671b1dc94098') in 0.017905 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/LiquidVolume/Resources/Textures/LifeRT.renderTexture
+  artifactKey: Guid(6ced1a0600ad6401e8640bed72e58b99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LiquidVolume/Resources/Textures/LifeRT.renderTexture using Guid(6ced1a0600ad6401e8640bed72e58b99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b21ff647bd6f74063b8a7666c603e282') in 0.019292 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/LiquidVolume/Resources/Textures/Noise3D3.asset
+  artifactKey: Guid(cf5740ccd8e2d4200aaa67e31ff22ed0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LiquidVolume/Resources/Textures/Noise3D3.asset using Guid(cf5740ccd8e2d4200aaa67e31ff22ed0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c41c1256f43cde4ae52b9ddcd4287fff') in 0.049282 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005044 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\kfurk\Desktop\Summer Paint Git\Summer Paint\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory doesn't match image C:\Users\kfurk\Desktop\Summer Paint Git\Summer Paint\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.78 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.035 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1036ms)
+		BeginReloadAssembly (123ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (34ms)
+		EndReloadAssembly (827ms)
+			LoadAssemblies (91ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (273ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (51ms)
+			SetupLoadedEditorAssemblies (342ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (28ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (72ms)
+				ProcessInitializeOnLoadAttributes (208ms)
+				ProcessInitializeOnLoadMethodAttributes (24ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.57 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3357 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 19 unused Assets / (81.3 KB). Loaded Objects now: 3912.
+Memory consumption went from 148.2 MB to 148.1 MB.
+Total: 3.587800 ms (FindLiveObjects: 0.359500 ms CreateObjectMapping: 0.129900 ms MarkObjects: 2.982300 ms  DeleteObjects: 0.114600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.023623 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\kfurk\Desktop\Summer Paint Git\Summer Paint\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory doesn't match image C:\Users\kfurk\Desktop\Summer Paint Git\Summer Paint\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 77.06 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.357 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1360ms)
+		BeginReloadAssembly (265ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (18ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (86ms)
+		EndReloadAssembly (998ms)
+			LoadAssemblies (142ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (237ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (39ms)
+			SetupLoadedEditorAssemblies (469ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (30ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (77ms)
+				BeforeProcessingInitializeOnLoad (105ms)
+				ProcessInitializeOnLoadAttributes (210ms)
+				ProcessInitializeOnLoadMethodAttributes (39ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 5.63 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3483 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 83 unused Assets / (18.2 MB). Loaded Objects now: 3977.
+Memory consumption went from 178.6 MB to 160.4 MB.
+Total: 14.151600 ms (FindLiveObjects: 0.279400 ms CreateObjectMapping: 0.105600 ms MarkObjects: 8.171800 ms  DeleteObjects: 5.592800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1095.031969 seconds.
+  path: Assets/AssetPacks/Toony Colors Pro/Textures/Ramps/TCP2_Ramp_UnityGradient.png
+  artifactKey: Guid(ccad9b0732473ee4e95de81e50e9050f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/Toony Colors Pro/Textures/Ramps/TCP2_Ramp_UnityGradient.png using Guid(ccad9b0732473ee4e95de81e50e9050f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '736aa351b1981ecff66680b31969d8c3') in 0.121062 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/AssetPacks/Toony Colors Pro/Textures/Sketch/TCP2_SketchE.png
+  artifactKey: Guid(e59ad75f36f8cda4ea83c10baf69c83e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/Toony Colors Pro/Textures/Sketch/TCP2_SketchE.png using Guid(e59ad75f36f8cda4ea83c10baf69c83e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35b3ee8e2352cb57e62577087ccf44bd') in 0.022166 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/AssetPacks/Toony Colors Pro/Textures/Sketch/TCP2_SketchGradient_Halftone2.png
+  artifactKey: Guid(7c9d6cd16e51c834b8a063ea54bd0edb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/Toony Colors Pro/Textures/Sketch/TCP2_SketchGradient_Halftone2.png using Guid(7c9d6cd16e51c834b8a063ea54bd0edb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b3a9dab582130ed8acbab941e4bac67') in 0.033339 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/AssetPacks/Toony Colors Pro/Textures/Threshold/TCP2_ThresholdTex_Noise.png
+  artifactKey: Guid(a6658021cab4ef4469e34c50df983aad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/Toony Colors Pro/Textures/Threshold/TCP2_ThresholdTex_Noise.png using Guid(a6658021cab4ef4469e34c50df983aad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f09e1da8214416937c84aa120125f064') in 0.017805 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/AssetPacks/Toony Colors Pro/Textures/Sketch/TCP2_SketchGradient_Square.png
+  artifactKey: Guid(048b8ea8f34ab8c48bc154e893d11b62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/Toony Colors Pro/Textures/Sketch/TCP2_SketchGradient_Square.png using Guid(048b8ea8f34ab8c48bc154e893d11b62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edd989dc8a422afd2541e76115d314eb') in 0.021414 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/AssetPacks/Toony Colors Pro/Textures/Sketch/TCP2_SketchG_Hatches.png
+  artifactKey: Guid(faf680a714888ac47832c8ab18c31cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/Toony Colors Pro/Textures/Sketch/TCP2_SketchG_Hatches.png using Guid(faf680a714888ac47832c8ab18c31cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97ad7805701e2ce9b7673740ab4ecc6c') in 0.020471 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/AssetPacks/Toony Colors Pro/Textures/Sketch/TCP2_SketchA_Cross.png
+  artifactKey: Guid(b1b62855ddf91f140a6b405c3037c38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/Toony Colors Pro/Textures/Sketch/TCP2_SketchA_Cross.png using Guid(b1b62855ddf91f140a6b405c3037c38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '858c3c87f8d1509ccbe549aa2c40c56f') in 0.018765 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/AssetPacks/Toony Colors Pro/Textures/Sketch/TCP2_SketchC.png
+  artifactKey: Guid(9e1565e2f7e0a6e4aaa88ed460551ee3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/Toony Colors Pro/Textures/Sketch/TCP2_SketchC.png using Guid(9e1565e2f7e0a6e4aaa88ed460551ee3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08ece0182bbf24b260df2c607fcdb449') in 0.025706 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/AssetPacks/Toony Colors Pro/Textures/Sketch/TCP2_SketchD.png
+  artifactKey: Guid(5c936ba288807144db1481ad2b9c3689) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/Toony Colors Pro/Textures/Sketch/TCP2_SketchD.png using Guid(5c936ba288807144db1481ad2b9c3689) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '632eb795aff51fde8565d0bde360f28f') in 0.021958 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/AssetPacks/Toony Colors Pro/Textures/Sketch/TCP2_SketchGradient_Diamond.png
+  artifactKey: Guid(a53def7b8b10ce24697b973c9e995ea9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/Toony Colors Pro/Textures/Sketch/TCP2_SketchGradient_Diamond.png using Guid(a53def7b8b10ce24697b973c9e995ea9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74492ea2aa94ef685fe002737683ec26') in 0.024720 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/AssetPacks/Toony Colors Pro/Demo TCP2/SG Demo Assets/_Misc Assets/TCP2_Water Foam Caustics.png
+  artifactKey: Guid(2a2d71ee416d3c844adfa1a053ea32f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/Toony Colors Pro/Demo TCP2/SG Demo Assets/_Misc Assets/TCP2_Water Foam Caustics.png using Guid(2a2d71ee416d3c844adfa1a053ea32f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39bf25f04cb95756f823f2b4ef5a3666') in 0.020609 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/AssetPacks/Toony Colors Pro/Textures/Sketch/TCP2_SketchB_Hor (ColorBurn).png
+  artifactKey: Guid(461a858c7ff874d42b13217ddbf81d28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/Toony Colors Pro/Textures/Sketch/TCP2_SketchB_Hor (ColorBurn).png using Guid(461a858c7ff874d42b13217ddbf81d28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e9b3519a19fa6069542d946e383c2a0') in 0.020651 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
