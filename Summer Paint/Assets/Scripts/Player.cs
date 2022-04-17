@@ -30,8 +30,13 @@ public class Player : MonoBehaviour
             }
             else
             {
-                selectedJuice.transform.DORotate(new Vector3(0, -90f, -90f), 0.5f, RotateMode.Fast);
+                selectedJuice.transform.DORotate(new Vector3(0, -90f, -75f), 0.5f, RotateMode.Fast);
             }
+        }
+
+        if (Input.GetKey(KeyCode.A))
+        {
+            selectedJuice.transform.DORotate(new Vector3(0, -90f, -75f), 0.5f, RotateMode.Fast);
         }
     }
 }
