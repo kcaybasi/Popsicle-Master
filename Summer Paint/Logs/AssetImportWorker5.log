@@ -1,0 +1,234 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.0f1 (6eacc8284459) revision 7253192'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19044) 64bit Professional' Language: 'en' Physical Memory: 7893 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.0f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker5
+-projectPath
+C:/Users/kfurk/Desktop/Summer Paint Git/Summer Paint
+-logFile
+Logs/AssetImportWorker5.log
+-srvPort
+61568
+Successfully changed project path to: C:/Users/kfurk/Desktop/Summer Paint Git/Summer Paint
+C:/Users/kfurk/Desktop/Summer Paint Git/Summer Paint
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 150.84 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.0f1 (6eacc8284459)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.0f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/kfurk/Desktop/Summer Paint Git/Summer Paint/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3050 Laptop GPU (ID=0x25a5)
+    Vendor:   NVIDIA
+    VRAM:     3991 MB
+    Driver:   30.0.15.1215
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.0f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.0f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56276
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.0f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.0f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.006813 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 98.44 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.598 seconds
+Domain Reload Profiling:
+	ReloadAssembly (598ms)
+		BeginReloadAssembly (59ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (414ms)
+			LoadAssemblies (58ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (91ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (22ms)
+			SetupLoadedEditorAssemblies (256ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (43ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (99ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (79ms)
+				ProcessInitializeOnLoadMethodAttributes (35ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.004529 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\kfurk\Desktop\Summer Paint Git\Summer Paint\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory doesn't match image C:\Users\kfurk\Desktop\Summer Paint Git\Summer Paint\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 97.20 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.066 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1067ms)
+		BeginReloadAssembly (196ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (122ms)
+		EndReloadAssembly (777ms)
+			LoadAssemblies (83ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (199ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (50ms)
+			SetupLoadedEditorAssemblies (411ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (97ms)
+				BeforeProcessingInitializeOnLoad (74ms)
+				ProcessInitializeOnLoadAttributes (207ms)
+				ProcessInitializeOnLoadMethodAttributes (16ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.93 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3730 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 46 unused Assets / (1.1 MB). Loaded Objects now: 4198.
+Memory consumption went from 177.8 MB to 176.7 MB.
+Total: 3.199200 ms (FindLiveObjects: 0.337400 ms CreateObjectMapping: 0.134000 ms MarkObjects: 2.173500 ms  DeleteObjects: 0.553100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 196837.487132 seconds.
+  path: Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Demo/Demo_UI/InputField_Frame01_d.png
+  artifactKey: Guid(69182636b3efa4063b1a80e916b2d312) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Demo/Demo_UI/InputField_Frame01_d.png using Guid(69182636b3efa4063b1a80e916b2d312) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17145f68fe376c67479c3c332648905d') in 0.156076 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Demo/Demo_Play/Play_ActionText_Frame_Orange.png
+  artifactKey: Guid(9107d96184f17498b9e0058c1b9fc98a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Demo/Demo_Play/Play_ActionText_Frame_Orange.png using Guid(9107d96184f17498b9e0058c1b9fc98a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c316039ff8ecfaf0316b847e731046d6') in 0.062010 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Demo/Demo_UI/Notify_Count_Green_l.png
+  artifactKey: Guid(7b7ccc812964b4113bcb420b583b6a17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Demo/Demo_UI/Notify_Count_Green_l.png using Guid(7b7ccc812964b4113bcb420b583b6a17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd8f07024537bb859ec9b91d91de4944') in 0.063328 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Demo/Demo_UI/InputField_Icon_Email_0.png
+  artifactKey: Guid(bd7820459436c4022b247f5a14f682ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Demo/Demo_UI/InputField_Icon_Email_0.png using Guid(bd7820459436c4022b247f5a14f682ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03036f276728d4407a8863eff7dac429') in 0.033454 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Label/Label_TitleFlag_Blue.png
+  artifactKey: Guid(5be23c1877e9a40e28a1f3e28352d894) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Label/Label_TitleFlag_Blue.png using Guid(5be23c1877e9a40e28a1f3e28352d894) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb91874e56128133f527781a7c758c94') in 0.047774 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Demo/Demo_UI/Notify_Count_Red_s.png
+  artifactKey: Guid(d360c761a90c641d9b704106d9dacba1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Demo/Demo_UI/Notify_Count_Red_s.png using Guid(d360c761a90c641d9b704106d9dacba1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2dec4dfb2eb15bdc0cd4b5c252e726eb') in 0.030734 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Demo/Demo_UI/InputField_Frame03.png
+  artifactKey: Guid(75a88e452128d49d293c6dc5da2b17d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Demo/Demo_UI/InputField_Frame03.png using Guid(75a88e452128d49d293c6dc5da2b17d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eac7bdc194bb3849b0cb38501465541a') in 0.027391 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/UI/Sprites/orange.png
+  artifactKey: Guid(c8d065b7ca52135408c8c5b97e5e1e11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Sprites/orange.png using Guid(c8d065b7ca52135408c8c5b97e5e1e11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc46ed48ed93f62632611b5650421372') in 0.157270 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Demo/Demo_UI/InputField_Frame01_n.png
+  artifactKey: Guid(1d48c180f78384887b54f3ce7bc8046f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Demo/Demo_UI/InputField_Frame01_n.png using Guid(1d48c180f78384887b54f3ce7bc8046f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '379c0029317ca9bfad242f4e8fde3619') in 0.029475 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Demo/Demo_Character/Play_Caracter_Sample1.png
+  artifactKey: Guid(2a19c04b8c8d04b14a6f7a59974b1493) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Demo/Demo_Character/Play_Caracter_Sample1.png using Guid(2a19c04b8c8d04b14a6f7a59974b1493) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a32701a658ac93360464e09e3ad8de9') in 0.037525 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.098673 seconds.
+  path: Assets/AssetPacks/CoffeeShopStarterPack/Test/ScreenShots/PW_frenchtoast_orange.png
+  artifactKey: Guid(30bfd2d25a8c34fe0b534e927c307e1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/CoffeeShopStarterPack/Test/ScreenShots/PW_frenchtoast_orange.png using Guid(30bfd2d25a8c34fe0b534e927c307e1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eed2432c1a5622bba8db7a398b4822ec') in 0.068731 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
