@@ -16,9 +16,31 @@ public class PopsicleMold : MonoBehaviour
 
     private void OnParticleCollision(GameObject other)
     {
-        liquidVolume.level += Time.deltaTime * 0.18f;
+        GetJuiceColor(other);
+        Fill();
         UpdateMoldCollider();
 
+    }
+
+    private void Fill()
+    {
+        liquidVolume.level += Time.deltaTime * 0.18f;
+    }
+
+    private void GetJuiceColor(GameObject other)
+    {
+        switch (other.tag)
+        {
+            case "Strawberry":
+                liquidVolume.liquidColor1 = Color.red;
+                break;
+            case "Kiwi":
+                liquidVolume.liquidColor1 = Color.green;
+                break;
+            case "Orange":
+                liquidVolume.liquidColor1 = Color.yellow;
+                break;
+        }
     }
 
     private void UpdateMoldCollider()
