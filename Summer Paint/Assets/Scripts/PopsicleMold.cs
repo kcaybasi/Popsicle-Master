@@ -17,14 +17,14 @@ public class PopsicleMold : MonoBehaviour
     private void OnParticleCollision(GameObject other)
     {
         GetJuiceColor(other);
-        Fill();
-        UpdateMoldCollider();
+        Fill(0.18f);
+        UpdateMoldCollider(0.3f);
 
     }
 
-    private void Fill()
+    private void Fill(float fillSpeed)
     {
-        liquidVolume.level += Time.deltaTime * 0.18f;
+        liquidVolume.level += Time.deltaTime * fillSpeed;
     }
 
     private void GetJuiceColor(GameObject other)
@@ -43,10 +43,10 @@ public class PopsicleMold : MonoBehaviour
         }
     }
 
-    private void UpdateMoldCollider()
+    private void UpdateMoldCollider(float colliderMovementSpeed)
     {
         Vector3 colliderPos = moldCollider.center;
-        colliderPos.z += Time.deltaTime * 0.3f;
+        colliderPos.z += Time.deltaTime * colliderMovementSpeed;
         moldCollider.center = colliderPos;
     }
 }
