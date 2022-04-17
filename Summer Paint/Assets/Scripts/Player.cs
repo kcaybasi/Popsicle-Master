@@ -30,14 +30,18 @@ public class Player : MonoBehaviour
             }
             else
             {
-                selectedJuice.transform.DORotate(new Vector3(-165f, 180f, 0f), 0.5f, RotateMode.Fast);
+                selectedJuice.transform.DORotate(new Vector3(-165f, 180f, -40f), 0.5f, RotateMode.Fast);
             }
         }
 
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.A))
         {
             selectedJuice.transform.DORotate(new Vector3(-165f, 180f, -40f), 0.5f, RotateMode.Fast);
-           // selectedJuice.transform.GetChild(2).gameObject.SetActive(true);
+            selectedJuice.transform.GetChild(2).GetComponent<ParticleSystem>().Play();
+        }
+        else
+        {
+            return;
         }
     }
 }
