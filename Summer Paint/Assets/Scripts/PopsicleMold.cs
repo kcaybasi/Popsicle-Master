@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,7 +6,8 @@ using LiquidVolumeFX;
 
 public class PopsicleMold : MonoBehaviour
 {
-    [SerializeField] LiquidVolume liquidVolume;
+    public LiquidVolume liquidVolume;
+    public event EventHandler OnJuiceFilled;
     BoxCollider moldCollider;
 
     private void Start()
@@ -16,9 +18,20 @@ public class PopsicleMold : MonoBehaviour
 
     private void OnParticleCollision(GameObject other)
     {
+        CheckLiquidLevel(); // If liquid is full fire liquid full event and disable collider.
         GetJuiceColor(other);
         Fill(0.18f);
         UpdateMoldCollider(0.3f);
+
+    }
+
+    private void CheckLiquidLevel()
+    {
+        if (liquidVolume.level >= 1)
+        {
+            OnJuiceFilled?.Invoke(this, EventArgs.Empty);
+            moldCollider.enabled = false;
+        }
 
     }
 

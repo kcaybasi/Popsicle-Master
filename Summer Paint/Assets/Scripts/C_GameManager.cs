@@ -13,10 +13,11 @@ public class C_GameManager : MonoBehaviour
     [Header("Game Events")]
 
     [SerializeField] UnityEvent OnGameStarted;
+    [SerializeField] PopsicleMold popsicleMold;
     public event EventHandler OnJuiceSelected;
     private Animator gameManagerAnimator;
     public static C_GameManager instance;
- 
+   
     [Header("UI Menus")]
     [SerializeField] GameObject mainMenu;
     [SerializeField] GameObject gameplayMenu;
@@ -36,7 +37,14 @@ public class C_GameManager : MonoBehaviour
     {
         DOTween.Init();
         AddMenuObjectsToList();
+        popsicleMold.OnJuiceFilled += PopsicleMold_OnJuiceFilled;
         gameManagerAnimator = GetComponent<Animator>();
+    }
+
+    public void PopsicleMold_OnJuiceFilled(object sender, EventArgs e)
+    {
+        //Play done particle
+        //Disable controller
     }
 
     private void AddMenuObjectsToList()
@@ -78,6 +86,8 @@ public class C_GameManager : MonoBehaviour
         
     }
 
+
+
     // Button functions 
 
     public void StartMakingPopsticle()
@@ -86,7 +96,6 @@ public class C_GameManager : MonoBehaviour
         gameManagerAnimator.SetBool("MakingPopsicle", true); //Trigger state camera turning 
         OpenMenu(gameplayMenu);
     }
-
 
     public void SelectJuice()
     {

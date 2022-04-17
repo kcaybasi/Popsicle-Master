@@ -7,8 +7,10 @@ using DG.Tweening;
 
 public class Player : MonoBehaviour
 {
-    public GameObject selectedJuice;
+
+    private GameObject selectedJuice;
     private Touch touch;
+    
 
     private void Start()
     {
@@ -34,10 +36,11 @@ public class Player : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKey(KeyCode.A))
         {
             selectedJuice.transform.DORotate(new Vector3(-165f, 180f, -40f), 0.5f, RotateMode.Fast);
             selectedJuice.transform.GetChild(2).GetComponent<ParticleSystem>().Play();
+
         }
         else
         {
