@@ -45,6 +45,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9fecaaa0242b6b4ea93744a49bfa08f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mainMenu: {fileID: 0}
+  gameplayMenu: {fileID: 0}
+  gameOverMenu: {fileID: 0}
+  juiceList:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!95 &699059482365680826
 Animator:
   serializedVersion: 4

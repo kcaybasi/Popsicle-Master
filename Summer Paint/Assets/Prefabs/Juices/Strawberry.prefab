@@ -19,7 +19,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8173927657624982147
 Transform:
   m_ObjectHideFlags: 0
@@ -113,10 +113,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _topology: 1
   _detail: 10
-  _level: 0.507
-  _liquidColor1: {r: 1, g: 0, b: 0.009994984, a: 0.1}
+  _level: 0.366
+  _liquidColor1: {r: 0.9433962, g: 0.013349922, b: 0.02429192, a: 0.77254903}
   _liquidScale1: 0.75
-  _liquidColor2: {r: 1, g: 0, b: 0, a: 0.3}
+  _liquidColor2: {r: 1, g: 0.28773582, b: 0.28773582, a: 0.6313726}
   _liquidScale2: 5
   _alpha: 1
   _emissionColor: {r: 0, g: 0, b: 0, a: 1}
