@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using UnityEngine.Events;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
@@ -9,8 +10,13 @@ using UnityEngine.EventSystems;
 public class C_GameManager : MonoBehaviour
 {
 
-    private Animator gameManagerAnimator;
+    [Header("Game Events")]
 
+    [SerializeField] UnityEvent OnGameStarted;
+    public event EventHandler OnJuiceSelected;
+    private Animator gameManagerAnimator;
+    public static C_GameManager instance;
+ 
     [Header("UI Menus")]
     [SerializeField] GameObject mainMenu;
     [SerializeField] GameObject gameplayMenu;
@@ -20,10 +26,6 @@ public class C_GameManager : MonoBehaviour
     [Header("Juice Holders")]
     [SerializeField] List<GameObject> juiceList = new List<GameObject>();
     public GameObject selectedJuice;
-
-    public static C_GameManager instance;
-
-    public event EventHandler OnJuiceSelected;
 
     private void Awake()
     {
@@ -36,7 +38,6 @@ public class C_GameManager : MonoBehaviour
         AddMenuObjectsToList();
         gameManagerAnimator = GetComponent<Animator>();
     }
-
 
     private void AddMenuObjectsToList()
     {
@@ -81,6 +82,7 @@ public class C_GameManager : MonoBehaviour
 
     public void StartMakingPopsticle()
     {
+        OnGameStarted?.Invoke();
         gameManagerAnimator.SetBool("MakingPopsicle", true); //Trigger state camera turning 
         OpenMenu(gameplayMenu);
     }
@@ -98,5 +100,8 @@ public class C_GameManager : MonoBehaviour
             case "Orange": ActivateSelectedJuice(juiceList[2]);
                 break;
         }
+
+        OnJuiceSelected?.Invoke(this, EventArgs.Empty);
+        
     }
 }

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,12 +7,17 @@ using DG.Tweening;
 
 public class Player : MonoBehaviour
 {
-    private GameObject selectedJuice;
+    public GameObject selectedJuice;
     private Touch touch;
 
-    private void GetSelectedJuice()
+    private void Start()
     {
-        selectedJuice = C_GameManager.instance.selectedJuice;
+        C_GameManager.instance.OnJuiceSelected += Instance_OnJuiceSelected;
+    }
+
+    private void Instance_OnJuiceSelected(object sender, EventArgs e)
+    {
+        selectedJuice = C_GameManager.instance.selectedJuice; // Assign selected juice to move by player. 
     }
 
     private void Update()
