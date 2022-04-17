@@ -134,94 +134,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6893457ee3b8fde41a83a585bec46724, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!21 &142917566
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: LiquidVolumeDefault(Clone)
-  m_Shader: {fileID: 4800000, guid: be9d7fbb2c1ef43308f35fb0a12bbb88, type: 3}
-  m_ValidKeywords:
-  - LIQUID_VOLUME_CYLINDER
-  - LIQUID_VOLUME_NON_AABB
-  m_InvalidKeywords: []
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 3001
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _NoiseTex:
-        m_Texture: {fileID: 11700000, guid: 41974beaaddc547889b39d0022cb1d07, type: 2}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _NoiseTex2D:
-        m_Texture: {fileID: 2800000, guid: 2e25f51e1f31e4da8bdac5d08b0f578f, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _Alpha: 1
-    - _AlphaCombined: 1000
-    - _BasePos: -1
-    - _CullMode: 2
-    - _DeepAtten: 0
-    - _DoubleSidedBias: 0.05
-    - _FlaskBlurIntensity: 0
-    - _FlaskThickness: 0.05
-    - _FoamBottom: 1
-    - _FoamDensity: 0.5
-    - _FoamMaxPos: -0.3582392
-    - _FoamRaySteps: 7
-    - _FoamTurbulence: 1
-    - _FoamWeight: 10
-    - _Glossiness: 0
-    - _GlossinessInt: 0.5
-    - _Level: 1
-    - _LevelPos: -0.3582392
-    - _LiquidRaySteps: 10
-    - _Metallic: 0
-    - _Muddy: 0.976
-    - _Radius: 0.5
-    - _SmokeAtten: 2
-    - _SmokeRaySteps: 5
-    - _SmokeSpeed: 5
-    - _Sparkling: 1
-    - _SparklingIntensity: 0
-    - _SparklingThreshold: 1
-    - _Topology: 0
-    - _Turbulence: 1
-    - _Turbulence2: 1
-    - _TurbulenceSpeed: 1
-    - _UpperLimit: 0.01828887
-    - _ZTestMode: 4
-    m_Colors:
-    - _Bounds: {r: 1, g: 1, b: 1, a: 1}
-    - _Center: {r: 8.98, g: 0.366, b: -17.02, a: 0}
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Color1: {r: 1, g: 0.014462607, b: 0.0047169924, a: 0.77254903}
-    - _Color2: {r: 1, g: 1, b: 1, a: 0}
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
-    - _FlaskColor: {r: 0, g: 0, b: 0, a: 1}
-    - _FlaskThickness: {r: 1, g: 1, b: 1, a: 0}
-    - _FoamColor: {r: 0.9622642, g: 0.13163051, b: 0.13163051, a: 0.65}
-    - _GlossinessInt: {r: 8.872, g: 32, b: 0.3, a: 0}
-    - _Scale: {r: 0.34173787, g: 0.25151908, b: 0.13669515, a: 2.733903}
-    - _Size: {r: 0.93318164, g: 1.4631097, b: 0.2571425, a: 0.46659082}
-    - _SmokeColor: {r: 0.7, g: 0.7, b: 0.7, a: 0.25}
-    - _Turbulence: {r: 0.024, g: 0.424, b: 12.566371, a: 0}
-    - _ViewDir: {r: 0, g: 0, b: 1, a: 1}
-  m_BuildTextureStacks: []
---- !u!21 &312137463
+--- !u!21 &271784394
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -650,6 +563,93 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!21 &832236831
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: LiquidVolumeDefault(Clone)
+  m_Shader: {fileID: 4800000, guid: be9d7fbb2c1ef43308f35fb0a12bbb88, type: 3}
+  m_ValidKeywords:
+  - LIQUID_VOLUME_CYLINDER
+  - LIQUID_VOLUME_NON_AABB
+  m_InvalidKeywords: []
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 3001
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NoiseTex:
+        m_Texture: {fileID: 11700000, guid: 41974beaaddc547889b39d0022cb1d07, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NoiseTex2D:
+        m_Texture: {fileID: 2800000, guid: 2e25f51e1f31e4da8bdac5d08b0f578f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Alpha: 1
+    - _AlphaCombined: 1000
+    - _BasePos: -1
+    - _CullMode: 2
+    - _DeepAtten: 0
+    - _DoubleSidedBias: 0.05
+    - _FlaskBlurIntensity: 0
+    - _FlaskThickness: 0.05
+    - _FoamBottom: 1
+    - _FoamDensity: 0.5
+    - _FoamMaxPos: -0.3582392
+    - _FoamRaySteps: 7
+    - _FoamTurbulence: 1
+    - _FoamWeight: 10
+    - _Glossiness: 0
+    - _GlossinessInt: 0.5
+    - _Level: 1
+    - _LevelPos: -0.3582392
+    - _LiquidRaySteps: 10
+    - _Metallic: 0
+    - _Muddy: 0.976
+    - _Radius: 0.5
+    - _SmokeAtten: 2
+    - _SmokeRaySteps: 5
+    - _SmokeSpeed: 5
+    - _Sparkling: 1
+    - _SparklingIntensity: 0
+    - _SparklingThreshold: 1
+    - _Topology: 0
+    - _Turbulence: 1
+    - _Turbulence2: 1
+    - _TurbulenceSpeed: 1
+    - _UpperLimit: 0.01828887
+    - _ZTestMode: 4
+    m_Colors:
+    - _Bounds: {r: 1, g: 1, b: 1, a: 1}
+    - _Center: {r: 8.98, g: 0.366, b: -17.02, a: 0}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color1: {r: 1, g: 0.014462607, b: 0.0047169924, a: 0.77254903}
+    - _Color2: {r: 1, g: 1, b: 1, a: 0}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
+    - _FlaskColor: {r: 0, g: 0, b: 0, a: 1}
+    - _FlaskThickness: {r: 1, g: 1, b: 1, a: 0}
+    - _FoamColor: {r: 0.9622642, g: 0.13163051, b: 0.13163051, a: 0.65}
+    - _GlossinessInt: {r: 8.872, g: 32, b: 0.3, a: 0}
+    - _Scale: {r: 0.34173787, g: 0.25151908, b: 0.13669515, a: 2.733903}
+    - _Size: {r: 0.93318164, g: 1.4631097, b: 0.2571425, a: 0.46659082}
+    - _SmokeColor: {r: 0.7, g: 0.7, b: 0.7, a: 0.25}
+    - _Turbulence: {r: 0.024, g: 0.424, b: 12.566371, a: 0}
+    - _ViewDir: {r: 0, g: 0, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1095,7 +1095,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 0.49935317, y: 1}
+    m_SensorSize: {x: 0.4993789, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -1120,6 +1120,93 @@ Transform:
   m_Father: {fileID: 366763844}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!21 &1735756910
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: LiquidVolumeDefault(Clone)
+  m_Shader: {fileID: 4800000, guid: be9d7fbb2c1ef43308f35fb0a12bbb88, type: 3}
+  m_ValidKeywords:
+  - LIQUID_VOLUME_CYLINDER
+  - LIQUID_VOLUME_NON_AABB
+  m_InvalidKeywords: []
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 3001
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NoiseTex:
+        m_Texture: {fileID: 11700000, guid: 41974beaaddc547889b39d0022cb1d07, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NoiseTex2D:
+        m_Texture: {fileID: 2800000, guid: 2e25f51e1f31e4da8bdac5d08b0f578f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Alpha: 1
+    - _AlphaCombined: 1000
+    - _BasePos: -1
+    - _CullMode: 2
+    - _DeepAtten: 0
+    - _DoubleSidedBias: 0.05
+    - _FlaskBlurIntensity: 0
+    - _FlaskThickness: 0.05
+    - _FoamBottom: 1
+    - _FoamDensity: 0.5
+    - _FoamMaxPos: -0.3582392
+    - _FoamRaySteps: 7
+    - _FoamTurbulence: 1
+    - _FoamWeight: 10
+    - _Glossiness: 0
+    - _GlossinessInt: 0.5
+    - _Level: 1
+    - _LevelPos: -0.3582392
+    - _LiquidRaySteps: 10
+    - _Metallic: 0
+    - _Muddy: 0.976
+    - _Radius: 0.5
+    - _SmokeAtten: 2
+    - _SmokeRaySteps: 5
+    - _SmokeSpeed: 5
+    - _Sparkling: 1
+    - _SparklingIntensity: 0
+    - _SparklingThreshold: 1
+    - _Topology: 0
+    - _Turbulence: 1
+    - _Turbulence2: 1
+    - _TurbulenceSpeed: 1
+    - _UpperLimit: 0.01828887
+    - _ZTestMode: 4
+    m_Colors:
+    - _Bounds: {r: 1, g: 1, b: 1, a: 1}
+    - _Center: {r: 8.98, g: 0.366, b: -17.02, a: 0}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color1: {r: 1, g: 0.014462607, b: 0.0047169924, a: 0.77254903}
+    - _Color2: {r: 1, g: 1, b: 1, a: 0}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
+    - _FlaskColor: {r: 0, g: 0, b: 0, a: 1}
+    - _FlaskThickness: {r: 1, g: 1, b: 1, a: 0}
+    - _FoamColor: {r: 0.9622642, g: 0.13163051, b: 0.13163051, a: 0.65}
+    - _GlossinessInt: {r: 8.872, g: 32, b: 0.3, a: 0}
+    - _Scale: {r: 0.34173787, g: 0.25151908, b: 0.13669515, a: 2.733903}
+    - _Size: {r: 0.93318164, g: 1.4631097, b: 0.2571425, a: 0.46659082}
+    - _SmokeColor: {r: 0.7, g: 0.7, b: 0.7, a: 0.25}
+    - _Turbulence: {r: 0.024, g: 0.424, b: 12.566371, a: 3.1415927}
+    - _ViewDir: {r: 0, g: 0, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1 &1738993358
 GameObject:
   m_ObjectHideFlags: 3
@@ -1242,14 +1329,14 @@ PrefabInstance:
     - target: {fileID: 5631982237501380270, guid: ff57882248a5cba43af5191c94813c7c, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 142917566}
+      objectReference: {fileID: 1735756910}
     - target: {fileID: 6244815275422742916, guid: ff57882248a5cba43af5191c94813c7c, type: 3}
       propertyPath: m_Name
       value: PopsicleMold
       objectReference: {fileID: 0}
     - target: {fileID: 6764928652937339710, guid: ff57882248a5cba43af5191c94813c7c, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 6764928652937339710, guid: ff57882248a5cba43af5191c94813c7c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1294,7 +1381,7 @@ PrefabInstance:
     - target: {fileID: 9200289968219341332, guid: ff57882248a5cba43af5191c94813c7c, type: 3}
       propertyPath: liqMat
       value: 
-      objectReference: {fileID: 312137463}
+      objectReference: {fileID: 271784394}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff57882248a5cba43af5191c94813c7c, type: 3}
 --- !u!114 &1969132783 stripped
@@ -1354,7 +1441,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 0.49935317, y: 1}
+    m_SensorSize: {x: 0.4993789, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -1379,6 +1466,11 @@ Transform:
   m_Father: {fileID: 366763844}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 12.5, y: 90, z: 0}
+--- !u!1 &2070737287 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7292075833469147387, guid: 35b9904f8aa0abd4099cc4d3fcdcbe5b, type: 3}
+  m_PrefabInstance: {fileID: 7292075832280836476}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4055726689367246 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5767908337584467670, guid: 1ce147e9ec97ce44bb8953104bc9f2ca, type: 3}
@@ -1509,9 +1601,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Strawberry
       objectReference: {fileID: 0}
+    - target: {fileID: 5672464391094176457, guid: a5e3956c03510794cb3263d2cc77dbfe, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7557008160369455426, guid: a5e3956c03510794cb3263d2cc77dbfe, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 7557008160369455426, guid: a5e3956c03510794cb3263d2cc77dbfe, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1519,11 +1615,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7557008160369455426, guid: a5e3956c03510794cb3263d2cc77dbfe, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.827
+      value: 1.84
       objectReference: {fileID: 0}
     - target: {fileID: 7557008160369455426, guid: a5e3956c03510794cb3263d2cc77dbfe, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -17.999
+      value: -18.08
       objectReference: {fileID: 0}
     - target: {fileID: 7557008160369455426, guid: a5e3956c03510794cb3263d2cc77dbfe, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1627,6 +1723,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1969132783}
     - target: {fileID: 699059482365680827, guid: b28282dcea49420479d28771e40a2f01, type: 3}
+      propertyPath: popsicleStick
+      value: 
+      objectReference: {fileID: 2070737287}
+    - target: {fileID: 699059482365680827, guid: b28282dcea49420479d28771e40a2f01, type: 3}
       propertyPath: juiceList.Array.data[0]
       value: 
       objectReference: {fileID: 5442807591441399655}
@@ -1685,7 +1785,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1169401362668576037, guid: e15c065cdc085e6459e859333c07cd91, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1169401362668576037, guid: e15c065cdc085e6459e859333c07cd91, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1732,6 +1832,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4534331454347564338, guid: e15c065cdc085e6459e859333c07cd91, type: 3}
+      propertyPath: slideSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4534331454347564338, guid: e15c065cdc085e6459e859333c07cd91, type: 3}
+      propertyPath: pcSlideSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4534331454347564338, guid: e15c065cdc085e6459e859333c07cd91, type: 3}
       propertyPath: popsicleMold
       value: 
       objectReference: {fileID: 1969132783}
@@ -1751,7 +1859,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3077686188721456419, guid: 21a362a13bcc0ff4bb0bbeda24f4500c, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 3077686188721456419, guid: 21a362a13bcc0ff4bb0bbeda24f4500c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1759,11 +1867,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3077686188721456419, guid: 21a362a13bcc0ff4bb0bbeda24f4500c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.827
+      value: 1.84
       objectReference: {fileID: 0}
     - target: {fileID: 3077686188721456419, guid: 21a362a13bcc0ff4bb0bbeda24f4500c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -17.999
+      value: -18.08
       objectReference: {fileID: 0}
     - target: {fileID: 3077686188721456419, guid: 21a362a13bcc0ff4bb0bbeda24f4500c, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2117,6 +2225,67 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ce147e9ec97ce44bb8953104bc9f2ca, type: 3}
+--- !u!1001 &7292075832280836476
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7292075833469147383, guid: 35b9904f8aa0abd4099cc4d3fcdcbe5b, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7292075833469147383, guid: 35b9904f8aa0abd4099cc4d3fcdcbe5b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 8.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 7292075833469147383, guid: 35b9904f8aa0abd4099cc4d3fcdcbe5b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 7292075833469147383, guid: 35b9904f8aa0abd4099cc4d3fcdcbe5b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -18.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 7292075833469147383, guid: 35b9904f8aa0abd4099cc4d3fcdcbe5b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7292075833469147383, guid: 35b9904f8aa0abd4099cc4d3fcdcbe5b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7292075833469147383, guid: 35b9904f8aa0abd4099cc4d3fcdcbe5b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7292075833469147383, guid: 35b9904f8aa0abd4099cc4d3fcdcbe5b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7292075833469147383, guid: 35b9904f8aa0abd4099cc4d3fcdcbe5b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7292075833469147383, guid: 35b9904f8aa0abd4099cc4d3fcdcbe5b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 7292075833469147383, guid: 35b9904f8aa0abd4099cc4d3fcdcbe5b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7292075833469147387, guid: 35b9904f8aa0abd4099cc4d3fcdcbe5b, type: 3}
+      propertyPath: m_Name
+      value: PopsicleStick
+      objectReference: {fileID: 0}
+    - target: {fileID: 7292075833469147387, guid: 35b9904f8aa0abd4099cc4d3fcdcbe5b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 35b9904f8aa0abd4099cc4d3fcdcbe5b, type: 3}
 --- !u!1001 &8146873899198837323
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2130,7 +2299,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8146873900254731310, guid: a7c589974bcf839498c384a58a58c6cb, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 8146873900254731310, guid: a7c589974bcf839498c384a58a58c6cb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2138,11 +2307,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8146873900254731310, guid: a7c589974bcf839498c384a58a58c6cb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.827
+      value: 1.84
       objectReference: {fileID: 0}
     - target: {fileID: 8146873900254731310, guid: a7c589974bcf839498c384a58a58c6cb, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -17.999
+      value: -18.08
       objectReference: {fileID: 0}
     - target: {fileID: 8146873900254731310, guid: a7c589974bcf839498c384a58a58c6cb, type: 3}
       propertyPath: m_LocalRotation.w

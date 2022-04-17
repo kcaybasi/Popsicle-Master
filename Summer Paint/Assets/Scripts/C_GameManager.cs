@@ -10,21 +10,30 @@ using UnityEngine.EventSystems;
 public class C_GameManager : MonoBehaviour
 {
 
+
+    [Header("Game States")]
+    public State gameState=State.gettingOrder;
+    public enum State { gettingOrder,moldFilling, stickPlacing, freezing}
+   
+
     [Header("Game Events")]
 
     [SerializeField] UnityEvent OnGameStarted;
     [SerializeField] PopsicleMold popsicleMold;
+    public GameObject popsicleStick;
     public event EventHandler OnJuiceSelected;
     private Animator gameManagerAnimator;
     public static C_GameManager instance;
    
     [Header("UI Menus")]
+
     [SerializeField] GameObject mainMenu;
     [SerializeField] GameObject gameplayMenu;
     [SerializeField] GameObject gameOverMenu;
     List<GameObject> menuList = new List<GameObject>();
 
     [Header("Juice Holders")]
+
     [SerializeField] List<GameObject> juiceList = new List<GameObject>();
     public GameObject selectedJuice;
 
@@ -41,10 +50,13 @@ public class C_GameManager : MonoBehaviour
         gameManagerAnimator = GetComponent<Animator>();
     }
 
-    public void PopsicleMold_OnJuiceFilled(object sender, EventArgs e)
+    private void PopsicleMold_OnJuiceFilled(object sender, EventArgs e)
     {
-        //Play done particle
-        //Disable controller
+        for(int i = 0; i < juiceList.Count; i++)
+        {
+            juiceList[i].SetActive(false);
+        }
+        popsicleStick.SetActive(true);
     }
 
     private void AddMenuObjectsToList()
