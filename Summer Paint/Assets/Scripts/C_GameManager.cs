@@ -1,7 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using UnityEngine.EventSystems;
 
 
 public class C_GameManager : MonoBehaviour
@@ -20,6 +22,8 @@ public class C_GameManager : MonoBehaviour
     public GameObject selectedJuice;
 
     public static C_GameManager instance;
+
+    public event EventHandler OnJuiceSelected;
 
     private void Awake()
     {
@@ -81,18 +85,18 @@ public class C_GameManager : MonoBehaviour
         OpenMenu(gameplayMenu);
     }
 
-    public void SelectStrawberryJuice()
-    {
-        ActivateSelectedJuice(juiceList[0]);
-    }
 
-    public void SelectKiwiJuice()
+    public void SelectJuice()
     {
-        ActivateSelectedJuice(juiceList[1]);
-    }
-
-    public void SelectOrangeJuice()
-    {
-        ActivateSelectedJuice(juiceList[2]);
+        GameObject clickedButton = EventSystem.current.currentSelectedGameObject;
+        switch (clickedButton.tag)
+        {
+            case "Strawberry": ActivateSelectedJuice(juiceList[0]);
+                break;
+            case "Kiwi": ActivateSelectedJuice(juiceList[1]);
+                break;
+            case "Orange": ActivateSelectedJuice(juiceList[2]);
+                break;
+        }
     }
 }
