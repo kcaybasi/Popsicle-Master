@@ -14,7 +14,7 @@ public class C_GameManager : MonoBehaviour
 
     [Header("Game States")]
     public State gameState=State.gettingOrder;
-    public enum State { gettingOrder,moldFilling, stickPlacing, freezing , finishingOrder}
+    public enum State { gettingOrder,moldFilling, stickPlacing, freezing , gettingFromFreezer ,finishingOrder}
     private Animator gameManagerAnimator;
 
     [Header("Game Events")]
@@ -29,7 +29,8 @@ public class C_GameManager : MonoBehaviour
     public PopsicleMold popsicleMold;
     public PopsicleStick popsicleStick;
     public Freezer freezer;
-
+    public GameObject swipeDetector;
+ 
     [Header("UI Menu")]
 
     [SerializeField] GameObject mainMenu;
@@ -40,7 +41,7 @@ public class C_GameManager : MonoBehaviour
     [Header("Buttons")]
 
     [SerializeField] GameObject checkButton;
-    [SerializeField] GameObject putButton;
+    [SerializeField] GameObject finishButton;
 
     [Header("Juice Holders")]
 
@@ -55,6 +56,7 @@ public class C_GameManager : MonoBehaviour
     private void Start()
     {
         DOTween.Init();
+        DOTween.SetTweensCapacity(50, 500);
         popsicleStick.OnStickPlaced += PopsicleStick_OnStickPlaced;
         popsicleMold.OnJuiceFilled += PopsicleMold_OnJuiceFilled;
         freezer.OnFreezingDone += Freezer_OnFreezingDone;
@@ -63,17 +65,16 @@ public class C_GameManager : MonoBehaviour
 
     private void Freezer_OnFreezingDone(object sender, EventArgs e)
     {
-        gameState = State.finishingOrder;
-        popsicleMold.transform.DOMoveZ(-26, 0.5f, false);
-        popsicleMold.transform.DORotate(new Vector3(90f, 0, 0), 0.5f, RotateMode.Fast);
-        popsicleMold.transform.GetChild(4).gameObject.SetActive(true);
-        gameManagerAnimator.SetTrigger("ReturnToStand");
+        gameState = State.gettingFromFreezer;
+        ActivateButton(finishButton, 1612f, 0f, true);
+       
     }
 
     private void PopsicleStick_OnStickPlaced(object sender, EventArgs e)
     {
         gameState = State.freezing;
-        ActivateButton(true, checkButton);
+        swipeDetector.SetActive(true);
+        ActivateButton(checkButton,1614f,420f,true);
     }
 
     private void PopsicleMold_OnJuiceFilled(object sender, EventArgs e)
@@ -121,19 +122,24 @@ public class C_GameManager : MonoBehaviour
         
     }
 
-    private void ActivateButton(bool isActive,GameObject button) 
+    private void ActivateButton(GameObject button,float startingPos, float endingPos , bool isActive) 
     {
         if (isActive)
         {        
-            button.GetComponent<RectTransform>().DOAnchorPos3DX(420f, 1.25f, false);
+            button.GetComponent<RectTransform>().DOAnchorPos3DX(endingPos, 1.25f, false);
         }
         else
         {
-            button.GetComponent<RectTransform>().DOAnchorPos3DX(1614f, 1.25f, false);
+            button.GetComponent<RectTransform>().DOAnchorPos3DX(startingPos, 1.25f, false);
         }
     }
 
-    
+    private void PrepareMoldToFreeze()
+    {
+        popsicleMold.transform.DOScale(0.2f, 1f);
+        popsicleMold.moldCollider.enabled = true;
+        popsicleMold.transform.parent = cameraObj.transform;
+    }
     #region Button Functions
 
     public void StartMakingPopsicle()
@@ -166,16 +172,16 @@ public class C_GameManager : MonoBehaviour
         gameManagerAnimator.SetTrigger("StartFreezingPopsicle"); // Trigger state camera turning
 
         gameplayMenu.SetActive(false);
-        ActivateButton(false, checkButton);
-        ActivateButton(true, putButton);
+        ActivateButton(checkButton, 1614f, 420f, false);
+
 
     }
 
-    private void PrepareMoldToFreeze()
+    public void FinishOrder()
     {
-        popsicleMold.transform.DOScale(0.2f, 1f);
-        popsicleMold.moldCollider.enabled = true;
-        popsicleMold.transform.parent = cameraObj.transform;
+        gameState = State.finishingOrder;
+        
+        gameManagerAnimator.SetTrigger("ReturnToStand");
     }
 
 
