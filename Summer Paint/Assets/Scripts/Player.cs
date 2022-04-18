@@ -74,9 +74,13 @@ public class Player : MonoBehaviour
         {
             PourJuice();
         }
+        else if(touch.phase==TouchPhase.Moved)
+        {
+            return;
+        }
         else
         {
-           // StopPouring();
+            StopPouring();
         }
         
        
@@ -105,7 +109,6 @@ public class Player : MonoBehaviour
                
              
             }
-  
         }
         ClampPosition(slideVector);      
 
