@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class Customer : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private C_GameManager gameManager;
+    private Animator customerAnimator;
+
+    private void Start()
     {
-        
+        customerAnimator = GetComponent<Animator>();
+        gameManager = C_GameManager.instance;
+        gameManager.OnGameFinish += GameManager_OnGameFinish;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void GameManager_OnGameFinish(object sender, System.EventArgs e)
     {
-        
+        customerAnimator.SetTrigger("Cheer");
     }
 }
