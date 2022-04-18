@@ -57,8 +57,7 @@ public class C_GameManager : MonoBehaviour
     private void C_GameManager_OnStickPlaced(object sender, EventArgs e)
     {
         gameState=State.freezing;
-        checkButton.GetComponent<RectTransform>().DOAnchorPos3DX(420f, 2f, false);
-
+        ActivateCheckButton(true);
 
     }
 
@@ -68,10 +67,10 @@ public class C_GameManager : MonoBehaviour
         for(int i = 0; i < juiceList.Count; i++)
         {
             juiceList[i].SetActive(false);
-            //Disable Juice Selection Menu
         }
         popsicleStick.SetActive(true);
-        ActivateCheckButton(true);
+        popsicleStick.transform.DOMoveZ(-18f, 0.5f, false);
+      
         
     }
 
@@ -118,11 +117,12 @@ public class C_GameManager : MonoBehaviour
     {
         if (isActive)
         {
-            popsicleStick.transform.DOMoveZ(-18f, 0.5f, false);
+           
+            checkButton.GetComponent<RectTransform>().DOAnchorPos3DX(420f, 1.25f, false);
         }
         else
         {
-            checkButton.GetComponent<RectTransform>().DOAnchorPos3DX(1614f, 2f, false);
+            checkButton.GetComponent<RectTransform>().DOAnchorPos3DX(1614f, 1.25f, false);
         }
     }
 
@@ -158,6 +158,7 @@ public class C_GameManager : MonoBehaviour
         popsicleMold.transform.DOScale(0.2f, 1f);
         popsicleMold.transform.parent = cameraObj.transform; // Assign as child of camera to pickup mold
         gameManagerAnimator.SetTrigger("StartFreezingPopsicle"); // Trigger state camera turning
+        
         gameplayMenu.SetActive(false);
         ActivateCheckButton(false);
        

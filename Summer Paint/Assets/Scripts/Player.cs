@@ -18,6 +18,7 @@ public class Player : MonoBehaviour
 
     [SerializeField] PopsicleMold popsicleMold;
     [SerializeField] GameObject playerObject;
+    [SerializeField] PopsicleStick popsicleStick;
     private C_GameManager gameManager;
 
     [Header("Juice Pouring")]
@@ -33,6 +34,12 @@ public class Player : MonoBehaviour
         gameManager = C_GameManager.instance;
         gameManager.OnJuiceSelected += Instance_OnJuiceSelected;
         popsicleMold.OnJuiceFilled += PopsicleMold_OnJuiceFilled;
+        popsicleStick.OnStickPlaced += PopsicleStick_OnStickPlaced;
+    }
+
+    private void PopsicleStick_OnStickPlaced(object sender, EventArgs e)
+    {
+       playerObject=popsicleMold.gameObject;
     }
 
     private void PopsicleMold_OnJuiceFilled(object sender, EventArgs e)
@@ -62,6 +69,8 @@ public class Player : MonoBehaviour
             case C_GameManager.State.moldFilling: ControlJuiceBottles();
                 break;
             case C_GameManager.State.stickPlacing:MovePopsicleStick();
+                break;
+            case C_GameManager.State.freezing:PutPopsicleInFreezer();
                 break;
         }
     }
@@ -146,6 +155,13 @@ public class Player : MonoBehaviour
         }
     }
 
-
+    private void PutPopsicleInFreezer()
+    {
+        
+        if (touch.phase == TouchPhase.Moved)
+        {
+           // playerObject.transform.DORotate(new Vector3(90, 0, 0), 1f, RotateMode.Fast);
+        }
+    }
 
 }
