@@ -1,0 +1,305 @@
+Unity Editor version:    2021.3.0f1 (6eacc8284459)
+Branch:                  2021.3/staging
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 12.2.1 (Build 21D62)
+Darwin version:          21.3.0
+Architecture:            arm64
+Running under Rosetta:   NO
+Available memory:        16384 MB
+Using pre-set license
+Pro License: YES
+
+COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/2021.3.0f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker5
+-projectPath
+/Applications/Unity/Projects/Summer-Paint/Summer Paint
+-logFile
+Logs/AssetImportWorker5.log
+-srvPort
+51508
+Successfully changed project path to: /Applications/Unity/Projects/Summer-Paint/Summer Paint
+/Applications/Unity/Projects/Summer-Paint/Summer Paint
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 96.02 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.0f1 (6eacc8284459)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2021.3.0f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Applications/Unity/Projects/Summer-Paint/Summer Paint/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+ preferred device: Apple M1 Pro (high power)
+Metal devices available: 1
+0: Apple M1 Pro (high power)
+Using device Apple M1 Pro (high power)
+Initializing Metal device caps: Apple M1 Pro
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/2021.3.0f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2021.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
+Mono config path = '/Applications/Unity/Hub/Editor/2021.3.0f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56758
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2021.3.0f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2021.3.0f1/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2021.3.0f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
+Registered in 0.002660 seconds.
+[usbmuxd] Start listen thread
+[usbmuxd] Listen thread started
+[usbmuxd] Send listen message
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 88.32 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.501 seconds
+Domain Reload Profiling:
+	ReloadAssembly (501ms)
+		BeginReloadAssembly (60ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (0ms)
+		EndReloadAssembly (366ms)
+			LoadAssemblies (61ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (82ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (23ms)
+			SetupLoadedEditorAssemblies (233ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (63ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (88ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (54ms)
+				ProcessInitializeOnLoadMethodAttributes (26ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.004929 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /Applications/Unity/Projects/Summer-Paint/Summer Paint/Library/PackageCache/com.unity.visualscripting@1.7.6/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory doesn't match image /Applications/Unity/Projects/Summer-Paint/Summer Paint/Library/PackageCache/com.unity.visualscripting@1.7.6/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 96.04 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.942 seconds
+Domain Reload Profiling:
+	ReloadAssembly (943ms)
+		BeginReloadAssembly (168ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (120ms)
+		EndReloadAssembly (697ms)
+			LoadAssemblies (64ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (197ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (48ms)
+			SetupLoadedEditorAssemblies (358ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (13ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (96ms)
+				BeforeProcessingInitializeOnLoad (55ms)
+				ProcessInitializeOnLoadAttributes (179ms)
+				ProcessInitializeOnLoadMethodAttributes (14ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (2ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launching external process: /Applications/Unity/Hub/Editor/2021.3.0f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.63 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3778 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 44 unused Assets / (1.1 MB). Loaded Objects now: 4242.
+Memory consumption went from 286.9 MB to 285.8 MB.
+Total: 2.828166 ms (FindLiveObjects: 0.122708 ms CreateObjectMapping: 0.041375 ms MarkObjects: 2.260583 ms  DeleteObjects: 0.402709 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 130465.464464 seconds.
+  path: Assets/AssetPacks/CoffeeShopStarterPack/Textures/bar.png
+  artifactKey: Guid(9f5b42e6619444d599114333c7341d05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/CoffeeShopStarterPack/Textures/bar.png using Guid(9f5b42e6619444d599114333c7341d05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddbaac73480d06f6ab0e132cb209cde7') in 0.146568 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 48.101719 seconds.
+  path: Assets/AssetPacks/Epic Toon FX/Materials/Misc/Emojis/em_starstruck.mat
+  artifactKey: Guid(2c5a5477c0843cc4688749001bbfbb22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/Epic Toon FX/Materials/Misc/Emojis/em_starstruck.mat using Guid(2c5a5477c0843cc4688749001bbfbb22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e9274f6b98572dc4f763ce0f5709b22') in 0.777341 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000081 seconds.
+  path: Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Particle/Materials/fx_Star_l_blurry_purple.mat
+  artifactKey: Guid(92e48a67f552644bcb3565cdeb56b23d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Particle/Materials/fx_Star_l_blurry_purple.mat using Guid(92e48a67f552644bcb3565cdeb56b23d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb25c99237955f1849dcff5443e9543e') in 0.054644 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Particle/Texture/fx_star_green.png
+  artifactKey: Guid(1868c3e3c6eab43068b4e25363442455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Particle/Texture/fx_star_green.png using Guid(1868c3e3c6eab43068b4e25363442455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f7931dd6de44e7b6927edb39c084305') in 0.010026 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Particle/Materials/fx_Star_l_blurry_blue.mat
+  artifactKey: Guid(e6f4d75db0d90446589504ad879cb46e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Particle/Materials/fx_Star_l_blurry_blue.mat using Guid(e6f4d75db0d90446589504ad879cb46e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '799f178b4a1282c3ea673b2f29c642a6') in 0.008987 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000103 seconds.
+  path: Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Particle/Texture/fx_star_blue.png
+  artifactKey: Guid(6b8d863aaefb842fcb6259ffc653db01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Particle/Texture/fx_star_blue.png using Guid(6b8d863aaefb842fcb6259ffc653db01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01e154b9458121a859732eef895bad0c') in 0.008102 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000070 seconds.
+  path: Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Particle/Materials/fx_Star_l_blurry_red.mat
+  artifactKey: Guid(139ce17d388b84eb284255684202a24e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Particle/Materials/fx_Star_l_blurry_red.mat using Guid(139ce17d388b84eb284255684202a24e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58a1d704fbc60fbeed2210834ca3d094') in 0.005162 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Particle/Materials/fx_Star_l_clear_blue.mat
+  artifactKey: Guid(8817af8399a44484ca02c825c3938c84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Particle/Materials/fx_Star_l_clear_blue.mat using Guid(8817af8399a44484ca02c825c3938c84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdd1d4f45550481fca76e241e28c0c33') in 0.007801 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.513123 seconds.
+  path: Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Particle/Materials/fx_Star_l_clear_red.mat
+  artifactKey: Guid(28941e20d7b024318bc3fc8e0a7988ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Particle/Materials/fx_Star_l_clear_red.mat using Guid(28941e20d7b024318bc3fc8e0a7988ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a736626cc60aaeb4968f741db5cf18e2') in 0.008945 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.049899 seconds.
+  path: Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Particle/Texture/fx_star_light.png
+  artifactKey: Guid(dc6554091b11d49f5b3a82dee8d80599) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Particle/Texture/fx_star_light.png using Guid(dc6554091b11d49f5b3a82dee8d80599) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d1beac645aaad7abdb88605b2012cbf') in 0.019540 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.646459 seconds.
+  path: Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Particle/Materials/fx_star_s_blurry_red.mat
+  artifactKey: Guid(d1ddab283fbb24f74ae540dae0b3f8fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Particle/Materials/fx_star_s_blurry_red.mat using Guid(d1ddab283fbb24f74ae540dae0b3f8fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9c990d66370633422892b9037d4c918') in 0.005944 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.637614 seconds.
+  path: Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Particle/Materials/fx_star_s_clear_blue.mat
+  artifactKey: Guid(649a3c10c127a479a81ed81fcbf85b0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Particle/Materials/fx_star_s_clear_blue.mat using Guid(649a3c10c127a479a81ed81fcbf85b0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '063a2f3c321bdfa475bcfde381f43c1b') in 0.006376 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.031896 seconds.
+  path: Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Particle/Materials/fx_star_s_clear_red.mat
+  artifactKey: Guid(dfa845a84cda046c08f9c97ea8799e93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Particle/Materials/fx_star_s_clear_red.mat using Guid(dfa845a84cda046c08f9c97ea8799e93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b067117c9e70da54b16012f115eab8fd') in 0.006300 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.031687 seconds.
+  path: Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Particle/Texture/fx_star_white.png
+  artifactKey: Guid(5a6b42d1cb16d4e80a04cea43bc257bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Particle/Texture/fx_star_white.png using Guid(5a6b42d1cb16d4e80a04cea43bc257bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7bc664f9d5c0c466885e5c8bd09bbfd') in 0.007422 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.525997 seconds.
+  path: Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Demo/Demo_Icon/Icon_ImageIcon_Star01_s.png
+  artifactKey: Guid(d249acd8c8f234a4093464e66d8c92f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Demo/Demo_Icon/Icon_ImageIcon_Star01_s.png using Guid(d249acd8c8f234a4093464e66d8c92f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f178d80bd145b0cd768d9e1b75f55a8') in 0.009129 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.328638 seconds.
+  path: Assets/AssetPacks/Epic Toon FX/Textures/Powerbox/powerbox_star_e.png
+  artifactKey: Guid(76ef3c68ddf837041817c3ca315e4973) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/Epic Toon FX/Textures/Powerbox/powerbox_star_e.png using Guid(76ef3c68ddf837041817c3ca315e4973) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20908df89976d01e4ca7a5505f4a13d0') in 0.006800 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.364033 seconds.
+  path: Assets/AssetPacks/Epic Toon FX/Prefabs/Interactive/Powerups/PowerBox/Flat/PowerboxStar.prefab
+  artifactKey: Guid(ce15738198c922d4284af0d7b9fe1cba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/Epic Toon FX/Prefabs/Interactive/Powerups/PowerBox/Flat/PowerboxStar.prefab using Guid(ce15738198c922d4284af0d7b9fe1cba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9988b419792b41b297248ee3973e7e02') in 0.102834 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.008082 seconds.
+  path: Assets/AssetPacks/Epic Toon FX/Materials/Misc/Stars/star_AB.mat
+  artifactKey: Guid(d05bd487e32791148ab238ebabb0154b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/Epic Toon FX/Materials/Misc/Stars/star_AB.mat using Guid(d05bd487e32791148ab238ebabb0154b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '703c4f7e7b69f48fcb4485decb16f4f8') in 0.005617 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.604944 seconds.
+  path: Assets/AssetPacks/Epic Toon FX/Materials/Misc/Stars/star_outline_AB.mat
+  artifactKey: Guid(05e20be0d592a0e41a5fe0dbb7440642) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/Epic Toon FX/Materials/Misc/Stars/star_outline_AB.mat using Guid(05e20be0d592a0e41a5fe0dbb7440642) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef92aa07300683f16deb62c1aeefddb1') in 0.009286 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.026697 seconds.
+  path: Assets/AssetPacks/Epic Toon FX/Textures/star_outlined_colored.png
+  artifactKey: Guid(a4e52c23f174acd4fbf8b0b3b6042219) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/Epic Toon FX/Textures/star_outlined_colored.png using Guid(a4e52c23f174acd4fbf8b0b3b6042219) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13beacfd082b51b5e801a9cf3d495a68') in 0.005763 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/AssetPacks/Epic Toon FX/Materials/Misc/Stars/star_outlined_colored_AB.mat
+  artifactKey: Guid(cbc52801184e2f140a2340e2d106207b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/Epic Toon FX/Materials/Misc/Stars/star_outlined_colored_AB.mat using Guid(cbc52801184e2f140a2340e2d106207b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f84f090fdab71b88f065d4a48019081') in 0.007376 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting

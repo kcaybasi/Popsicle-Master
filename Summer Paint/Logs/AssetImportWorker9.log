@@ -16,13 +16,13 @@ COMMAND LINE ARGUMENTS:
 -batchMode
 -noUpm
 -name
-AssetImportWorker4
+AssetImportWorker9
 -projectPath
 /Applications/Unity/Projects/Summer-Paint/Summer Paint
 -logFile
-Logs/AssetImportWorker4.log
+Logs/AssetImportWorker9.log
 -srvPort
-51315
+51508
 Successfully changed project path to: /Applications/Unity/Projects/Summer-Paint/Summer Paint
 /Applications/Unity/Projects/Summer-Paint/Summer Paint
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -54,7 +54,7 @@ Successfully changed project path to: /Applications/Unity/Projects/Summer-Paint/
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 93.34 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 97.42 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.0f1 (6eacc8284459)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2021.3.0f1/Unity.app/Contents/Resources/UnitySubsystems
@@ -69,52 +69,52 @@ Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/2021.3.0f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/2021.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
 Mono config path = '/Applications/Unity/Hub/Editor/2021.3.0f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56472
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56066
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/2021.3.0f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/2021.3.0f1/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/2021.3.0f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
-Registered in 0.003566 seconds.
+Registered in 0.002475 seconds.
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 [usbmuxd] Send listen message
 Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 88.24 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 88.28 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.442 seconds
+- Completed reload, in  0.457 seconds
 Domain Reload Profiling:
-	ReloadAssembly (442ms)
-		BeginReloadAssembly (54ms)
+	ReloadAssembly (457ms)
+		BeginReloadAssembly (53ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (0ms)
-		EndReloadAssembly (325ms)
-			LoadAssemblies (55ms)
+		EndReloadAssembly (336ms)
+			LoadAssemblies (53ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (64ms)
+			SetupTypeCache (70ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (18ms)
-			SetupLoadedEditorAssemblies (217ms)
+			RebuildScriptCaches (19ms)
+			SetupLoadedEditorAssemblies (218ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (58ms)
+				InitializePlatformSupportModulesInManaged (57ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (88ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (47ms)
-				ProcessInitializeOnLoadMethodAttributes (23ms)
+				ProcessInitializeOnLoadAttributes (48ms)
+				ProcessInitializeOnLoadMethodAttributes (24ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.004496 seconds.
+Registered in 0.004704 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image /Applications/Unity/Projects/Summer-Paint/Summer Paint/Library/PackageCache/com.unity.visualscripting@1.7.6/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory is not a mono symbol file
@@ -122,32 +122,32 @@ Symbol file LoadedFromMemory doesn't match image /Applications/Unity/Projects/Su
 Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 87.06 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 94.03 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.853 seconds
+- Completed reload, in  0.854 seconds
 Domain Reload Profiling:
-	ReloadAssembly (853ms)
+	ReloadAssembly (854ms)
 		BeginReloadAssembly (163ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
+			DisableScriptedObjects (3ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (118ms)
-		EndReloadAssembly (623ms)
-			LoadAssemblies (59ms)
+			CreateAndSetChildDomain (117ms)
+		EndReloadAssembly (625ms)
+			LoadAssemblies (66ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (165ms)
+			SetupTypeCache (164ms)
 			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (36ms)
-			SetupLoadedEditorAssemblies (335ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (331ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (13ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (87ms)
-				BeforeProcessingInitializeOnLoad (51ms)
-				ProcessInitializeOnLoadAttributes (168ms)
-				ProcessInitializeOnLoadMethodAttributes (15ms)
+				RefreshPlugins (94ms)
+				BeforeProcessingInitializeOnLoad (53ms)
+				ProcessInitializeOnLoadAttributes (156ms)
+				ProcessInitializeOnLoadMethodAttributes (14ms)
 				AfterProcessingInitializeOnLoad (1ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -157,12 +157,12 @@ Platform modules already initialized, skipping
 Worker process is ready to serve import requests
 Launching external process: /Applications/Unity/Hub/Editor/2021.3.0f1/Unity.app/Contents/Tools/UnityShaderCompiler
 Launched and connected shader compiler UnityShaderCompiler after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.61 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.62 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3778 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 44 unused Assets / (1.1 MB). Loaded Objects now: 4242.
-Memory consumption went from 286.9 MB to 285.8 MB.
-Total: 2.651083 ms (FindLiveObjects: 0.123834 ms CreateObjectMapping: 0.047916 ms MarkObjects: 2.086959 ms  DeleteObjects: 0.388208 ms)
+Memory consumption went from 287.2 MB to 286.1 MB.
+Total: 2.677833 ms (FindLiveObjects: 0.138875 ms CreateObjectMapping: 0.044625 ms MarkObjects: 2.110666 ms  DeleteObjects: 0.383459 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -176,32 +176,19 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 129516.975438 seconds.
-  path: Assets/UI/Sprites/money.png
-  artifactKey: Guid(6bcece01c38b34af9a16a20390272786) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UI/Sprites/money.png using Guid(6bcece01c38b34af9a16a20390272786) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '501a4adf616f1166908a65ffc0896485') in 0.124741 seconds 
+  Time since last request: 132682.143186 seconds.
+  path: Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Demo/Demo_UI/InputField_icon_Pw_1.png
+  artifactKey: Guid(c5844f8c6c02e47e58a3f8b122e58a59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Demo/Demo_UI/InputField_icon_Pw_1.png using Guid(c5844f8c6c02e47e58a3f8b122e58a59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '510caae02cb9d73c2f731fb73d176509') in 0.098493 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 8.058302 seconds.
-  path: Assets/UI/Sprites/money.png
-  artifactKey: Guid(6bcece01c38b34af9a16a20390272786) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UI/Sprites/money.png using Guid(6bcece01c38b34af9a16a20390272786) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0cd6a68374ec74976f2a39a19507822') in 0.031292 seconds 
+  Time since last request: 1.298798 seconds.
+  path: Assets/AssetPacks/CoffeeShopStarterPack/Test/ScreenShots/PW_orangejuice.png
+  artifactKey: Guid(48f7a4c6c857f4c3da7dfb3e85b66e63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/CoffeeShopStarterPack/Test/ScreenShots/PW_orangejuice.png using Guid(48f7a4c6c857f4c3da7dfb3e85b66e63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38750a4fd180fe1bea69481b7e122d74') in 0.030418 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 4.443329 seconds.
-  path: Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Demo/Demo_Icon_RuneIcons(Original)/RuneIcon2_Critical_Damage.Png
-  artifactKey: Guid(34afb4f1aeb554a35b3bff429de77455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Demo/Demo_Icon_RuneIcons(Original)/RuneIcon2_Critical_Damage.Png using Guid(34afb4f1aeb554a35b3bff429de77455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fea0e5069f630b7992923134072300e') in 0.086492 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000060 seconds.
-  path: Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Demo/Demo_Icon_RuneIcons(Original)/RuneIcon3_Ball_Count.Png
-  artifactKey: Guid(494f56e2fb2814696b824ae89249b018) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Demo/Demo_Icon_RuneIcons(Original)/RuneIcon3_Ball_Count.Png using Guid(494f56e2fb2814696b824ae89249b018) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e090faf5368bc1968f77013dec199154') in 0.009019 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000060 seconds.
-  path: Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Demo/Demo_Icon_RuneIcons(Original)/RuneIcon2_Debuff.Png
-  artifactKey: Guid(9d430462e79d84f99969ddf7a190b000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Demo/Demo_Icon_RuneIcons(Original)/RuneIcon2_Debuff.Png using Guid(9d430462e79d84f99969ddf7a190b000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2f88149b19ec2208a9c75fdc907d81d') in 0.008432 seconds 
-AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+  Time since last request: 1.678828 seconds.
+  path: Assets/UI/Sprites/orange.png
+  artifactKey: Guid(c8d065b7ca52135408c8c5b97e5e1e11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Sprites/orange.png using Guid(c8d065b7ca52135408c8c5b97e5e1e11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36f4fb4412cae794157597ff9588023e') in 0.070636 seconds 

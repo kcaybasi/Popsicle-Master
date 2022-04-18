@@ -1,0 +1,287 @@
+Unity Editor version:    2021.3.0f1 (6eacc8284459)
+Branch:                  2021.3/staging
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 12.2.1 (Build 21D62)
+Darwin version:          21.3.0
+Architecture:            arm64
+Running under Rosetta:   NO
+Available memory:        16384 MB
+Using pre-set license
+Pro License: YES
+
+COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/2021.3.0f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker6
+-projectPath
+/Applications/Unity/Projects/Summer-Paint/Summer Paint
+-logFile
+Logs/AssetImportWorker6.log
+-srvPort
+51508
+Successfully changed project path to: /Applications/Unity/Projects/Summer-Paint/Summer Paint
+/Applications/Unity/Projects/Summer-Paint/Summer Paint
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 90.33 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.0f1 (6eacc8284459)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2021.3.0f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Applications/Unity/Projects/Summer-Paint/Summer Paint/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+ preferred device: Apple M1 Pro (high power)
+Metal devices available: 1
+0: Apple M1 Pro (high power)
+Using device Apple M1 Pro (high power)
+Initializing Metal device caps: Apple M1 Pro
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/2021.3.0f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2021.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
+Mono config path = '/Applications/Unity/Hub/Editor/2021.3.0f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56881
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2021.3.0f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2021.3.0f1/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2021.3.0f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
+Registered in 0.001835 seconds.
+[usbmuxd] Start listen thread
+[usbmuxd] Listen thread started
+[usbmuxd] Send listen message
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 97.43 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.474 seconds
+Domain Reload Profiling:
+	ReloadAssembly (474ms)
+		BeginReloadAssembly (51ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (0ms)
+		EndReloadAssembly (359ms)
+			LoadAssemblies (52ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (69ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (21ms)
+			SetupLoadedEditorAssemblies (235ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (65ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (97ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (47ms)
+				ProcessInitializeOnLoadMethodAttributes (24ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.006394 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /Applications/Unity/Projects/Summer-Paint/Summer Paint/Library/PackageCache/com.unity.visualscripting@1.7.6/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory doesn't match image /Applications/Unity/Projects/Summer-Paint/Summer Paint/Library/PackageCache/com.unity.visualscripting@1.7.6/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 87.66 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.949 seconds
+Domain Reload Profiling:
+	ReloadAssembly (949ms)
+		BeginReloadAssembly (171ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (121ms)
+		EndReloadAssembly (703ms)
+			LoadAssemblies (60ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (179ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (38ms)
+			SetupLoadedEditorAssemblies (399ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (14ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (88ms)
+				BeforeProcessingInitializeOnLoad (52ms)
+				ProcessInitializeOnLoadAttributes (230ms)
+				ProcessInitializeOnLoadMethodAttributes (14ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (2ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launching external process: /Applications/Unity/Hub/Editor/2021.3.0f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.64 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3778 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 44 unused Assets / (1.1 MB). Loaded Objects now: 4242.
+Memory consumption went from 287.1 MB to 286.0 MB.
+Total: 2.674541 ms (FindLiveObjects: 0.120333 ms CreateObjectMapping: 0.042167 ms MarkObjects: 2.126916 ms  DeleteObjects: 0.384625 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 132044.947437 seconds.
+  path: Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Label/Label_TitleFlag_Purple.png
+  artifactKey: Guid(53a1ea3f1d6424c05b8510d75554f3f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Label/Label_TitleFlag_Purple.png using Guid(53a1ea3f1d6424c05b8510d75554f3f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1322b9059421beb911c2c95978fcfb4') in 0.178342 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.903774 seconds.
+  path: Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Demo/Demo_Icon_ItemIcons(Original)/Icon_Potion02_Purple.Png
+  artifactKey: Guid(9f43c6911bfdb489fad5cd24622b5182) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Demo/Demo_Icon_ItemIcons(Original)/Icon_Potion02_Purple.Png using Guid(9f43c6911bfdb489fad5cd24622b5182) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0808f65709ce3af7441f2665e7387f29') in 0.058859 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.263415 seconds.
+  path: Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Demo/Demo_Icon/Icon_ImageIcon_Gift_Purple.png
+  artifactKey: Guid(5c0fc92c3cd0949b5a21be0b0049bafa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Demo/Demo_Icon/Icon_ImageIcon_Gift_Purple.png using Guid(5c0fc92c3cd0949b5a21be0b0049bafa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8654cad5e9a8dc426c11152c86b750a') in 0.011053 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.334051 seconds.
+  path: Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Demo/Demo_Icon_ItemIcons(Original)/Icon_Gem03_Diamond_Purple.Png
+  artifactKey: Guid(8661490d01fe14ee3a29db3d39f643fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Demo/Demo_Icon_ItemIcons(Original)/Icon_Gem03_Diamond_Purple.Png using Guid(8661490d01fe14ee3a29db3d39f643fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76eedebc8df0069eedb5c76fe35d9808') in 0.010817 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 119.038313 seconds.
+  path: Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Demo/Demo_Icon/Icon_ImageIcon_Emoji.png
+  artifactKey: Guid(41d4323f253da4231926d204a4916fc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Demo/Demo_Icon/Icon_ImageIcon_Emoji.png using Guid(41d4323f253da4231926d204a4916fc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '913014b05974a621a2a713c211e80046') in 0.017206 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Demo/Demo_Icon/Icon_ImageIcon_Gem01_m.png
+  artifactKey: Guid(99d6b42a998a64478ab7de9ccdd0e411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Demo/Demo_Icon/Icon_ImageIcon_Gem01_m.png using Guid(99d6b42a998a64478ab7de9ccdd0e411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e21b39c7c83845541687dc8e78f6f6a1') in 0.015754 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Demo/Demo_Icon/Icon_ImageIcon_GemGold.png
+  artifactKey: Guid(cf218fd3f78cc4191bdf56c712995893) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Demo/Demo_Icon/Icon_ImageIcon_GemGold.png using Guid(cf218fd3f78cc4191bdf56c712995893) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b815ae68b06d8e704ef3ae79a66cc66') in 0.010897 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Demo/Demo_Icon/Icon_ImageIcon_Energy.png
+  artifactKey: Guid(dd50370016aa3427cbffd86ff9d349ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Demo/Demo_Icon/Icon_ImageIcon_Energy.png using Guid(dd50370016aa3427cbffd86ff9d349ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cf4140a528393a538d4144bd49fba05') in 0.009487 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000666 seconds.
+  path: Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Demo/Demo_Icon/Icon_ImageIcon_Gem01_l.png
+  artifactKey: Guid(7b6827dc950bb48278ef822641f23849) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Demo/Demo_Icon/Icon_ImageIcon_Gem01_l.png using Guid(7b6827dc950bb48278ef822641f23849) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6ad8d7f6414ba1cea040e158aee6bf8') in 0.008931 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 65.500313 seconds.
+  path: Assets/UI/Sprites/PopsicleLogo.png
+  artifactKey: Guid(2ef8274a9a198f84daf3637213ca4270) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Sprites/PopsicleLogo.png using Guid(2ef8274a9a198f84daf3637213ca4270) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28d5af929137847b44e754fcf04eca85') in 0.008425 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.132250 seconds.
+  path: Assets/UI/Sprites/strawberry.png
+  artifactKey: Guid(ea3f7808b0a0915448ddc1330099cf1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Sprites/strawberry.png using Guid(ea3f7808b0a0915448ddc1330099cf1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c6437c6f6b09617356cd26dca4561f8') in 0.035919 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 357.597297 seconds.
+  path: Assets/AssetPacks/CoffeeShopStarterPack/Test/ScreenShots/PW_cheesecake_strawberry.png
+  artifactKey: Guid(f6c2f1b0b59d14629a5054320d2a0d7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/CoffeeShopStarterPack/Test/ScreenShots/PW_cheesecake_strawberry.png using Guid(f6c2f1b0b59d14629a5054320d2a0d7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3043adf3b48a184994284b7525d08b41') in 0.035109 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.931432 seconds.
+  path: Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Demo/Demo_Icon/Icon_ImageIcon_Badge_Popular.png
+  artifactKey: Guid(3fbd2378634f8403b97c467c5fd40fef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Demo/Demo_Icon/Icon_ImageIcon_Badge_Popular.png using Guid(3fbd2378634f8403b97c467c5fd40fef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed15eb61b559285a655b6fcbf4a5074d') in 0.011690 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Popup/Popup_00_LIne.png
+  artifactKey: Guid(852e8aa9257ad44d3914c67e159ae8b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Popup/Popup_00_LIne.png using Guid(852e8aa9257ad44d3914c67e159ae8b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff409ac1fcee3e95d0bf83aace2abdcb') in 0.007887 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Popup/Popup_00_Glow_white.png
+  artifactKey: Guid(73d8983007ddd4830baf7ecba1debd74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Popup/Popup_00_Glow_white.png using Guid(73d8983007ddd4830baf7ecba1debd74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc8ce18ff17559f1484b77c706f8f650') in 0.052530 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.285243 seconds.
+  path: Assets/AssetPacks/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Textures/TCP2_Demo_Logo.png
+  artifactKey: Guid(22db3d1683e49874c9321c2887146b94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/Toony Colors Pro/Demo TCP2/Cat Demo Assets/Textures/TCP2_Demo_Logo.png using Guid(22db3d1683e49874c9321c2887146b94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38f6d74fdfa4f177adbebfc87bdf6aee') in 0.013221 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.841585 seconds.
+  path: Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Button/Btn_OtherButton_Polygon02.png
+  artifactKey: Guid(0972555577dae4776a602b0ce67c77f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Component/Button/Btn_OtherButton_Polygon02.png using Guid(0972555577dae4776a602b0ce67c77f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a52ab56c76ea57d25ce3157e071a99d') in 0.020389 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Demo/Demo_CountryFlag/Icon_LanguageFlag_Small_Pol.png
+  artifactKey: Guid(d96e6aec9636649398064ea3d75dca44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetPacks/GUI PRO Kit - Casual Game/ResourcesData/Sprite/Demo/Demo_CountryFlag/Icon_LanguageFlag_Small_Pol.png using Guid(d96e6aec9636649398064ea3d75dca44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74edfdb1d323c60fa370bf3105afab09') in 0.013091 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
