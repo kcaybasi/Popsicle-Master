@@ -57,6 +57,8 @@ public class C_GameManager : MonoBehaviour
     {
         gameState=State.freezing;
         checkButton.GetComponent<RectTransform>().DOAnchorPos3DX(420f, 2f, false);
+       
+        
     }
 
     private void PopsicleMold_OnJuiceFilled(object sender, EventArgs e)
@@ -68,7 +70,7 @@ public class C_GameManager : MonoBehaviour
             //Disable Juice Selection Menu
         }
         popsicleStick.SetActive(true);
-        popsicleStick.transform.DOMoveZ(-18f, 0.5f, false);
+        ActivateCheckButton(true);
         
     }
 
@@ -111,7 +113,17 @@ public class C_GameManager : MonoBehaviour
         
     }
 
-
+    private void ActivateCheckButton(bool isActive)
+    {
+        if (isActive)
+        {
+            popsicleStick.transform.DOMoveZ(-18f, 0.5f, false);
+        }
+        else
+        {
+            checkButton.GetComponent<RectTransform>().DOAnchorPos3DX(1614f, 2f, false);
+        }
+    }
 
     // Button functions 
 
@@ -143,5 +155,9 @@ public class C_GameManager : MonoBehaviour
     public void StartFreezingPopsicle()
     {
         gameManagerAnimator.SetTrigger("StartFreezingPopsicle"); // Trigger state camera turning
+        ActivateCheckButton(false);
+       
     }
+
+
 }
