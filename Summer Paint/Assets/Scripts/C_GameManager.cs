@@ -15,10 +15,11 @@ public class C_GameManager : MonoBehaviour
     [Header("Game States")]
     public State gameState=State.gettingOrder;
     public enum State { gettingOrder,moldFilling, stickPlacing, freezing}
-   
+
 
     [Header("Game Events")]
 
+    [SerializeField] GameObject cameraObj;
     [SerializeField] UnityEvent OnGameStarted;
     [SerializeField] PopsicleMold popsicleMold;
     public GameObject popsicleStick;
@@ -57,8 +58,8 @@ public class C_GameManager : MonoBehaviour
     {
         gameState=State.freezing;
         checkButton.GetComponent<RectTransform>().DOAnchorPos3DX(420f, 2f, false);
-       
-        
+
+
     }
 
     private void PopsicleMold_OnJuiceFilled(object sender, EventArgs e)
@@ -154,6 +155,8 @@ public class C_GameManager : MonoBehaviour
 
     public void StartFreezingPopsicle()
     {
+        popsicleMold.transform.DOScale(0.2f, 1f);
+        popsicleMold.transform.parent = cameraObj.transform; // Assign as child of camera to pickup mold
         gameManagerAnimator.SetTrigger("StartFreezingPopsicle"); // Trigger state camera turning
         gameplayMenu.SetActive(false);
         ActivateCheckButton(false);
