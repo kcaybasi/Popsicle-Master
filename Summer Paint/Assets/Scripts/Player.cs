@@ -144,12 +144,7 @@ public class Player : MonoBehaviour
         float spillAmount = spillFillImage.GetComponent<Image>().fillAmount;
         spillAmount -= Time.deltaTime;
         spillFillImage.GetComponent<Image>().fillAmount = spillAmount;
-
-        if (spillAmount < 0.01f)
-        {
-            spillFillImage.SetActive(false);
-            juiceParticle.Stop();
-        }
+        juiceParticle.Stop();
     }
 
 

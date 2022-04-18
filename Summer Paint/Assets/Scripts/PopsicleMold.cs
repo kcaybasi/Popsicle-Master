@@ -10,8 +10,6 @@ public class PopsicleMold : MonoBehaviour
     public event EventHandler OnJuiceFilled;
     public BoxCollider moldCollider;
     [SerializeField] ParticleSystem fillupParticle;
-    enum JuiceTypes {Null,Strawberry, Kiwi,Orange }
-    private JuiceTypes currentJuiceType = JuiceTypes.Null;
     private int fruitLayerlevel = -1;
     C_GameManager gameManager;
     
@@ -32,7 +30,7 @@ public class PopsicleMold : MonoBehaviour
     {
         CheckLiquidLevel(); // If liquid is full fire liquid full event and disable collider.
         GetJuiceType(other);
-        Fill(currentJuiceType,0.18f);
+        Fill(0.14f);
         UpdateMoldCollider(0.3f);
 
     }
@@ -49,19 +47,10 @@ public class PopsicleMold : MonoBehaviour
     }
 
 
-    private void Fill(JuiceTypes juiceTypes, float fillSpeed)
+    private void Fill( float fillSpeed)
     {
-        switch (juiceTypes)
-        {
-            case JuiceTypes.Strawberry: liquidVolume.liquidLayers[fruitLayerlevel].color = Color.red;
-                break;
-            case JuiceTypes.Kiwi: liquidVolume.liquidLayers[fruitLayerlevel].color = Color.green;
-                break;
-            case JuiceTypes.Orange: liquidVolume.liquidLayers[fruitLayerlevel].color = Color.yellow;
-                break;
-        }
         liquidVolume.liquidLayers[fruitLayerlevel].amount += Time.deltaTime * fillSpeed;
-        liquidVolume.UpdateLayers(true);
+        liquidVolume.UpdateLayers(false);
     }
 
     private void GetJuiceType(GameObject other)
@@ -69,13 +58,13 @@ public class PopsicleMold : MonoBehaviour
         switch (other.tag)
         {
             case "Strawberry":
-                currentJuiceType = JuiceTypes.Strawberry;
+                liquidVolume.liquidLayers[fruitLayerlevel].color = Color.red; 
                 break;
             case "Kiwi":
-                currentJuiceType = JuiceTypes.Kiwi;
+                liquidVolume.liquidLayers[fruitLayerlevel].color = Color.green;
                 break;
             case "Orange":
-                currentJuiceType = JuiceTypes.Orange;
+                liquidVolume.liquidLayers[fruitLayerlevel].color = Color.yellow;
                 break;
         }
     }
