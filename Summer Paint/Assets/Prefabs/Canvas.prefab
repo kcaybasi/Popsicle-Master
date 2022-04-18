@@ -261,7 +261,7 @@ GameObject:
   - component: {fileID: 5444148821878151043}
   - component: {fileID: 1087584008946697946}
   m_Layer: 5
-  m_Name: FillingDoneButton
+  m_Name: CheckButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -285,7 +285,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 398, y: -549}
+  m_AnchoredPosition: {x: 651, y: -549}
   m_SizeDelta: {x: 192, y: 206}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6066457556577449377

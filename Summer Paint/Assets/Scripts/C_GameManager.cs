@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 
 public class C_GameManager : MonoBehaviour
@@ -22,6 +23,7 @@ public class C_GameManager : MonoBehaviour
     [SerializeField] PopsicleMold popsicleMold;
     public GameObject popsicleStick;
     public event EventHandler OnJuiceSelected;
+    [SerializeField] GameObject checkButton;
     private Animator gameManagerAnimator;
     public static C_GameManager instance;
    
@@ -54,6 +56,7 @@ public class C_GameManager : MonoBehaviour
     private void C_GameManager_OnStickPlaced(object sender, EventArgs e)
     {
         gameState=State.freezing;
+        checkButton.GetComponent<RectTransform>().DOAnchorPos3DX(420f, 2f, false);
     }
 
     private void PopsicleMold_OnJuiceFilled(object sender, EventArgs e)
@@ -114,8 +117,8 @@ public class C_GameManager : MonoBehaviour
 
     public void StartMakingPopsticle()
     {
-        OnGameStarted?.Invoke();
-        gameManagerAnimator.SetBool("MakingPopsicle", true); //Trigger state camera turning 
+        OnGameStarted?.Invoke(); 
+        gameManagerAnimator.SetTrigger("StartMakingPopsicle");//Trigger state camera turning 
         OpenMenu(gameplayMenu);
     }
 
