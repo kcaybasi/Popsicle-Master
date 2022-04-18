@@ -70,14 +70,22 @@ public class Player : MonoBehaviour
     private void MoveJuiceBottles()
     {
         TouchControl();
-        KeyboardControl();
+        if (touch.phase == TouchPhase.Stationary )
+        {
+            PourJuice();
+        }
+        else
+        {
+           // StopPouring();
+        }
+        
        
     }
 
     private void MovePopsicleStick()
     {
         TouchControl();
-        KeyboardControl();
+
     }
 
 
@@ -94,64 +102,49 @@ public class Player : MonoBehaviour
                             playerObject.transform.position.y + touch.deltaPosition.y * slideSpeed * Time.deltaTime,
                             playerObject.transform.position.z - touch.deltaPosition.x * slideSpeed * Time.deltaTime);
                 playerObject.transform.position = slideVector;
+               
              
             }
-            else if (touch.phase == TouchPhase.Stationary)
-            {
-                PourJuice();
-            }
-
+  
         }
         ClampPosition(slideVector);      
 
-    }
-
-    private void KeyboardControl()
-    {
-        Vector3 pos = playerObject.transform.position;
-
-
-        if (Input.GetKey(KeyCode.D))
-        {
-            pos.z -= pcSlideSpeed * Time.deltaTime;
-        }
-        if (Input.GetKey(KeyCode.A))
-        {
-            pos.z += pcSlideSpeed * Time.deltaTime;
-        }
-        if (Input.GetKey(KeyCode.W))
-        {
-            pos.y += pcSlideSpeed * Time.deltaTime;
-        }
-        if (Input.GetKey(KeyCode.S))
-        {
-            pos.y -= pcSlideSpeed * Time.deltaTime;
-        }
-
-        playerObject.transform.position = pos;
     }
 
     private void ClampPosition(Vector3 clampedPos)
     {
         clampedPos = playerObject.transform.position;
         clampedPos.y = Mathf.Clamp(clampedPos.y, 0.9f, 4.3f);
-        clampedPos.z = Mathf.Clamp(clampedPos.z, -18f, -15.5f);
+        clampedPos.z = Mathf.Clamp(clampedPos.z, -19.5f, -15.5f);
         
         playerObject.transform.position = clampedPos;
     }
 
     private void PourJuice()
     {
+        spillFillImage.SetActive(true);
         float spillAmount = spillFillImage.GetComponent<Image>().fillAmount;
         spillAmount += Time.deltaTime;
         spillFillImage.GetComponent<Image>().fillAmount = spillAmount;
         if (spillAmount > 0.95f)
         {
             juiceParticle.Play();
-        }
-
-        
+        }  
     }
+
+    private void StopPouring()
+    {
+        float spillAmount = spillFillImage.GetComponent<Image>().fillAmount;
+        spillAmount -= Time.deltaTime;
+        spillFillImage.GetComponent<Image>().fillAmount = spillAmount;
+
+        if (spillAmount < 0.01f)
+        {
+            spillFillImage.SetActive(false);
+            juiceParticle.Stop();
+        }
+    }
+
 
 
 }
