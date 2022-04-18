@@ -64,8 +64,10 @@ public class C_GameManager : MonoBehaviour
     private void Freezer_OnFreezingDone(object sender, EventArgs e)
     {
         gameState = State.finishingOrder;
-        popsicleMold.transform.DOMoveZ(-26, 1f, false);
-        popsicleMold.transform.DORotate(new Vector3(90f, 0, 0), 1f, RotateMode.Fast);
+        popsicleMold.transform.DOMoveZ(-26, 0.5f, false);
+        popsicleMold.transform.DORotate(new Vector3(90f, 0, 0), 0.5f, RotateMode.Fast);
+        popsicleMold.transform.GetChild(4).gameObject.SetActive(true);
+        gameManagerAnimator.SetTrigger("ReturnToStand");
     }
 
     private void PopsicleStick_OnStickPlaced(object sender, EventArgs e)
