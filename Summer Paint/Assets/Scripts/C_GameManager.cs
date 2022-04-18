@@ -151,15 +151,20 @@ public class C_GameManager : MonoBehaviour
 
     public void StartFreezingPopsicle()
     {
+        PrepareMoldToFreeze();
+        gameManagerAnimator.SetTrigger("StartFreezingPopsicle"); // Trigger state camera turning
+
+        gameplayMenu.SetActive(false);
+        ActivateButton(false, checkButton);
+        ActivateButton(true, putButton);
+
+    }
+
+    private void PrepareMoldToFreeze()
+    {
         popsicleMold.transform.DOScale(0.2f, 1f);
         popsicleMold.moldCollider.enabled = true;
-        popsicleMold.transform.parent = cameraObj.transform; 
-        gameManagerAnimator.SetTrigger("StartFreezingPopsicle"); // Trigger state camera turning
-        
-        gameplayMenu.SetActive(false);
-        ActivateButton(false,checkButton);
-        ActivateButton(true, putButton);
-       
+        popsicleMold.transform.parent = cameraObj.transform;
     }
 
 
