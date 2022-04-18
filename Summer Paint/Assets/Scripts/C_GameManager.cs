@@ -115,7 +115,7 @@ public class C_GameManager : MonoBehaviour
 
     // Button functions 
 
-    public void StartMakingPopsticle()
+    public void StartMakingPopsicle()
     {
         OnGameStarted?.Invoke(); 
         gameManagerAnimator.SetTrigger("StartMakingPopsicle");//Trigger state camera turning 
@@ -138,5 +138,10 @@ public class C_GameManager : MonoBehaviour
         OnJuiceSelected?.Invoke(this, EventArgs.Empty);
         gameState = State.moldFilling;
         
+    }
+
+    public void StartFreezingPopsicle()
+    {
+        gameManagerAnimator.SetTrigger("StartFreezingPopsicle"); // Trigger state camera turning
     }
 }
