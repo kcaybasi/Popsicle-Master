@@ -5,7 +5,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 using UnityEngine.EventSystems;
-using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 
 
 public class C_GameManager : MonoBehaviour
@@ -197,6 +198,12 @@ public class C_GameManager : MonoBehaviour
         OnGameFinish?.Invoke(this, EventArgs.Empty);
         confetti.Play();
         OpenMenu(gameOverMenu);
+    }
+
+
+    public void ReloadScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     #endregion
