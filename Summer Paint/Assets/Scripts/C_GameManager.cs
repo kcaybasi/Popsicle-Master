@@ -9,6 +9,7 @@ using UnityEngine.SceneManagement;
 
 
 
+
 public class C_GameManager : MonoBehaviour
 {
 
@@ -144,7 +145,7 @@ public class C_GameManager : MonoBehaviour
         popsicleMold.transform.parent = cameraObj.transform;
     }
 
-
+ 
 
     #region Button Functions
 
@@ -176,7 +177,6 @@ public class C_GameManager : MonoBehaviour
     {
         PrepareMoldToFreeze();
         gameManagerAnimator.SetTrigger("StartFreezingPopsicle"); // Trigger state camera turning
-
         gameplayMenu.SetActive(false);
         ActivateButton(checkButton, 1614f, 420f, false);
 
