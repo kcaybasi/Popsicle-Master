@@ -38,7 +38,7 @@ public class Player : MonoBehaviour
     private void PopsicleMold_OnJuiceFilled(object sender, EventArgs e)
     {
         playerObject = gameManager.popsicleStick; //Assing popsicle stick as player object;
-        gameManager.gameState = C_GameManager.State.stickPlacing;
+   
     }
 
     private void Instance_OnJuiceSelected(object sender, EventArgs e)
@@ -46,28 +46,27 @@ public class Player : MonoBehaviour
         playerObject = gameManager.selectedJuice; // Assign selected juice to move by player. 
         spillFillImage = playerObject.transform.GetChild(3).GetChild(0).GetChild(1).gameObject;
         juiceParticle = playerObject.transform.GetChild(2).GetComponent<ParticleSystem>();
-        gameManager.gameState = C_GameManager.State.moldFilling;
 
     }
 
     private void Update()
     {
-        MovePlayerObject();
+        ControlPlayerObject();
     }
 
 
-    private void MovePlayerObject()
+    private void ControlPlayerObject()
     {
         switch (gameManager.gameState)
         {
-            case C_GameManager.State.moldFilling: MoveJuiceBottles();
+            case C_GameManager.State.moldFilling: ControlJuiceBottles();
                 break;
             case C_GameManager.State.stickPlacing:MovePopsicleStick();
                 break;
         }
     }
 
-    private void MoveJuiceBottles()
+    private void ControlJuiceBottles()
     {
         TouchControl();
         if (touch.phase == TouchPhase.Stationary )
@@ -82,7 +81,7 @@ public class Player : MonoBehaviour
         {
             StopPouring();
         }
-        
+     
        
     }
 
@@ -91,7 +90,6 @@ public class Player : MonoBehaviour
         TouchControl();
 
     }
-
 
     private void TouchControl()
     {
@@ -117,7 +115,7 @@ public class Player : MonoBehaviour
     private void ClampPosition(Vector3 clampedPos)
     {
         clampedPos = playerObject.transform.position;
-        clampedPos.y = Mathf.Clamp(clampedPos.y, 0.9f, 4.3f);
+        clampedPos.y = Mathf.Clamp(clampedPos.y, 0.9f, 2.5f);
         clampedPos.z = Mathf.Clamp(clampedPos.z, -19.5f, -15.5f);
         
         playerObject.transform.position = clampedPos;

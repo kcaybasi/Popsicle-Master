@@ -9,6 +9,7 @@ public class PopsicleMold : MonoBehaviour
     public LiquidVolume liquidVolume;
     public event EventHandler OnJuiceFilled;
     BoxCollider moldCollider;
+    [SerializeField] ParticleSystem fillupParticle;
 
     private void Start()
     {
@@ -31,6 +32,7 @@ public class PopsicleMold : MonoBehaviour
         {
             OnJuiceFilled?.Invoke(this, EventArgs.Empty);
             moldCollider.enabled = false;
+            fillupParticle.Play();
         }
 
     }

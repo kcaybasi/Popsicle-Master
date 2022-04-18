@@ -9,6 +9,7 @@ TagManager:
   - Kiwi
   - Strawberry
   - Orange
+  - StickPlace
   layers:
   - Default
   - TransparentFX

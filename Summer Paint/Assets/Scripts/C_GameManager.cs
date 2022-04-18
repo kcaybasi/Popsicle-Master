@@ -46,17 +46,27 @@ public class C_GameManager : MonoBehaviour
     {
         DOTween.Init();
         AddMenuObjectsToList();
+        popsicleStick.GetComponent<PopsicleStick>().OnStickPlaced += C_GameManager_OnStickPlaced;
         popsicleMold.OnJuiceFilled += PopsicleMold_OnJuiceFilled;
         gameManagerAnimator = GetComponent<Animator>();
     }
 
+    private void C_GameManager_OnStickPlaced(object sender, EventArgs e)
+    {
+        gameState=State.freezing;
+    }
+
     private void PopsicleMold_OnJuiceFilled(object sender, EventArgs e)
     {
+        gameState = State.stickPlacing;
         for(int i = 0; i < juiceList.Count; i++)
         {
             juiceList[i].SetActive(false);
+            //Disable Juice Selection Menu
         }
         popsicleStick.SetActive(true);
+        popsicleStick.transform.DOMoveZ(-18f, 0.5f, false);
+        
     }
 
     private void AddMenuObjectsToList()
@@ -123,6 +133,7 @@ public class C_GameManager : MonoBehaviour
         }
 
         OnJuiceSelected?.Invoke(this, EventArgs.Empty);
+        gameState = State.moldFilling;
         
     }
 }
