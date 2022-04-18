@@ -29,8 +29,7 @@ public class Player : MonoBehaviour
  
 
     private void Start()
-    {
-       
+    {     
         gameManager = C_GameManager.instance;
         gameManager.OnJuiceSelected += Instance_OnJuiceSelected;
         popsicleMold.OnJuiceFilled += PopsicleMold_OnJuiceFilled;
@@ -44,7 +43,7 @@ public class Player : MonoBehaviour
 
     private void PopsicleMold_OnJuiceFilled(object sender, EventArgs e)
     {
-        playerObject = gameManager.popsicleStick; //Assing popsicle stick as player object;
+        playerObject = gameManager.popsicleStick.gameObject; //Assing popsicle stick as player object;
    
     }
 
