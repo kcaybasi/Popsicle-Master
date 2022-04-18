@@ -155,6 +155,7 @@ public class C_GameManager : MonoBehaviour
     public void StartFreezingPopsicle()
     {
         gameManagerAnimator.SetTrigger("StartFreezingPopsicle"); // Trigger state camera turning
+        gameplayMenu.SetActive(false);
         ActivateCheckButton(false);
        
     }
