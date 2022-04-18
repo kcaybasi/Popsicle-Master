@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using DG.Tweening;
 
 
@@ -19,8 +20,16 @@ public class Player : MonoBehaviour
     [SerializeField] GameObject playerObject;
     private C_GameManager gameManager;
 
+    [Header("Juice Pouring")]
+
+    [SerializeField] float holdtimer;
+    GameObject spillFillImage;
+    ParticleSystem juiceParticle;
+ 
+
     private void Start()
     {
+       
         gameManager = C_GameManager.instance;
         gameManager.OnJuiceSelected += Instance_OnJuiceSelected;
         popsicleMold.OnJuiceFilled += PopsicleMold_OnJuiceFilled;
@@ -35,6 +44,8 @@ public class Player : MonoBehaviour
     private void Instance_OnJuiceSelected(object sender, EventArgs e)
     {
         playerObject = gameManager.selectedJuice; // Assign selected juice to move by player. 
+        spillFillImage = playerObject.transform.GetChild(3).GetChild(0).GetChild(1).gameObject;
+        juiceParticle = playerObject.transform.GetChild(2).GetComponent<ParticleSystem>();
         gameManager.gameState = C_GameManager.State.moldFilling;
 
     }
@@ -58,17 +69,19 @@ public class Player : MonoBehaviour
 
     private void MoveJuiceBottles()
     {
-        Movement();
-        Spill();
+        TouchControl();
+        KeyboardControl();
+       
     }
 
     private void MovePopsicleStick()
     {
-        Movement();
+        TouchControl();
+        KeyboardControl();
     }
 
 
-    private void Movement()
+    private void TouchControl()
     {
         if (Input.touchCount > 0)
         {
@@ -77,14 +90,24 @@ public class Player : MonoBehaviour
             if (touch.phase == TouchPhase.Moved)
             {
                 slideVector = new Vector3(
-                            playerObject.transform.position.x ,
+                            playerObject.transform.position.x,
                             playerObject.transform.position.y + touch.deltaPosition.y * slideSpeed * Time.deltaTime,
-                            playerObject.transform.position.z + touch.deltaPosition.x * slideSpeed * Time.deltaTime);
+                            playerObject.transform.position.z - touch.deltaPosition.x * slideSpeed * Time.deltaTime);
                 playerObject.transform.position = slideVector;
+             
+            }
+            else if (touch.phase == TouchPhase.Stationary)
+            {
+                PourJuice();
             }
 
         }
-       // ClampPosition(slideVector);
+        ClampPosition(slideVector);      
+
+    }
+
+    private void KeyboardControl()
+    {
         Vector3 pos = playerObject.transform.position;
 
 
@@ -106,24 +129,29 @@ public class Player : MonoBehaviour
         }
 
         playerObject.transform.position = pos;
-
     }
 
     private void ClampPosition(Vector3 clampedPos)
     {
         clampedPos = playerObject.transform.position;
-        clampedPos.x = Mathf.Clamp(clampedPos.x, -8.25f, 8.25f);
+        clampedPos.y = Mathf.Clamp(clampedPos.y, 0.9f, 4.3f);
+        clampedPos.z = Mathf.Clamp(clampedPos.z, -18f, -15.5f);
+        
         playerObject.transform.position = clampedPos;
     }
 
-    private void Spill()
+    private void PourJuice()
     {
-        if (Input.GetKeyDown(KeyCode.O))
+        float spillAmount = spillFillImage.GetComponent<Image>().fillAmount;
+        spillAmount += Time.deltaTime;
+        spillFillImage.GetComponent<Image>().fillAmount = spillAmount;
+        if (spillAmount > 0.95f)
         {
-            Vector3 spillRotation = playerObject.transform.eulerAngles;
-            spillRotation.x = -165f;
-            playerObject.transform.DORotate(spillRotation, 1f, RotateMode.Fast);
+            juiceParticle.Play();
         }
+
         
     }
+
+
 }
