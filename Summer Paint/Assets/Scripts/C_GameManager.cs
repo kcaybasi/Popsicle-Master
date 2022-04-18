@@ -101,11 +101,12 @@ public class C_GameManager : MonoBehaviour
             if (i != selectedJuiceIndex)
             {
                 juiceList[i].SetActive(false);
+                juiceList[i].transform.DOMoveZ(-23f, 1f, false);
             }
         }
         juiceObj.SetActive(true);
         selectedJuice = juiceObj;
-        selectedJuice.transform.DOShakePosition(0.8f, 0.4f, 6, 10);
+        selectedJuice.transform.DOMoveZ(-18.2f, 1f, false);
         
         
     }

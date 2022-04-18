@@ -122,7 +122,7 @@ public class Player : MonoBehaviour
     {
         clampedPos = playerObject.transform.position;
         clampedPos.y = Mathf.Clamp(clampedPos.y, 0.9f, 2.5f);
-        clampedPos.z = Mathf.Clamp(clampedPos.z, -19.5f, -15.5f);
+        clampedPos.z = Mathf.Clamp(clampedPos.z, -22f, -15.5f);
         
         playerObject.transform.position = clampedPos;
     }
