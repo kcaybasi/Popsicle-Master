@@ -14,7 +14,7 @@ public class C_GameManager : MonoBehaviour
 
     [Header("Game States")]
     public State gameState=State.gettingOrder;
-    public enum State { gettingOrder,moldFilling, stickPlacing, freezing}
+    public enum State { gettingOrder,moldFilling, stickPlacing, freezing , finishingOrder}
     private Animator gameManagerAnimator;
 
     [Header("Game Events")]
@@ -28,6 +28,7 @@ public class C_GameManager : MonoBehaviour
     [SerializeField] GameObject cameraObj;
     public PopsicleMold popsicleMold;
     public PopsicleStick popsicleStick;
+    public Freezer freezer;
 
     [Header("UI Menu")]
 
@@ -56,7 +57,15 @@ public class C_GameManager : MonoBehaviour
         DOTween.Init();
         popsicleStick.OnStickPlaced += PopsicleStick_OnStickPlaced;
         popsicleMold.OnJuiceFilled += PopsicleMold_OnJuiceFilled;
+        freezer.OnFreezingDone += Freezer_OnFreezingDone;
         gameManagerAnimator = GetComponent<Animator>();
+    }
+
+    private void Freezer_OnFreezingDone(object sender, EventArgs e)
+    {
+        gameState = State.finishingOrder;
+        popsicleMold.transform.DOMoveZ(-26, 1f, false);
+        popsicleMold.transform.DORotate(new Vector3(90f, 0, 0), 1f, RotateMode.Fast);
     }
 
     private void PopsicleStick_OnStickPlaced(object sender, EventArgs e)
@@ -73,8 +82,7 @@ public class C_GameManager : MonoBehaviour
             juiceList[i].SetActive(false);
         }
         popsicleStick.gameObject.SetActive(true);
-        popsicleStick.transform.DOMoveZ(-18f, 0.5f, false);
-      
+        popsicleStick.transform.DOMoveZ(-18f, 0.5f, false);     
         
     }
 

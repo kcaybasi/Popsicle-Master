@@ -31,7 +31,7 @@ public class PopsicleMold : MonoBehaviour
         CheckLiquidLevel(); // If liquid is full fire liquid full event and disable collider.
         GetJuiceType(other);
         Fill(0.14f);
-        UpdateMoldCollider(0.3f);
+        UpdateMoldCollider(0.4f);
 
     }
 
@@ -40,7 +40,7 @@ public class PopsicleMold : MonoBehaviour
         if (liquidVolume.level >= 1)
         {
             OnJuiceFilled?.Invoke(this, EventArgs.Empty);
-            moldCollider.enabled = false;
+            moldCollider.enabled = false; 
             fillupParticle.Play();
         }
 
