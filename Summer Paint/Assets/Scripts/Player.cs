@@ -70,8 +70,6 @@ public class Player : MonoBehaviour
                 break;
             case C_GameManager.State.stickPlacing:MovePopsicleStick();
                 break;
-            case C_GameManager.State.freezing:PutPopsicleInFreezer();
-                break;
         }
     }
 
@@ -155,13 +153,12 @@ public class Player : MonoBehaviour
         }
     }
 
-    private void PutPopsicleInFreezer()
+
+    // Button Function
+    public void PutPopsicleInFreezer()
     {
-        
-        if (touch.phase == TouchPhase.Moved)
-        {
-           // playerObject.transform.DORotate(new Vector3(90, 0, 0), 1f, RotateMode.Fast);
-        }
+        playerObject.transform.DOMoveZ(-27.75362f, 1f, false);
+        playerObject.transform.DORotate(new Vector3(0f, 0, 0), 1f, RotateMode.Fast);
     }
 
 }

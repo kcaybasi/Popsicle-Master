@@ -226,6 +226,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &404770350 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 128192833938462712, guid: 42ff4847176947845a41b0c1d8cebc81, type: 3}
+  m_PrefabInstance: {fileID: 4231624929474840275}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &417493420
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -292,6 +297,93 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9052452810787415018, guid: 2af0bd0d9c4b4be4fac70825014bdf58, type: 3}
   m_PrefabInstance: {fileID: 417493420}
   m_PrefabAsset: {fileID: 0}
+--- !u!21 &418894351
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: LiquidVolumeDefault(Clone)
+  m_Shader: {fileID: 4800000, guid: be9d7fbb2c1ef43308f35fb0a12bbb88, type: 3}
+  m_ValidKeywords:
+  - LIQUID_VOLUME_CYLINDER
+  - LIQUID_VOLUME_NON_AABB
+  m_InvalidKeywords: []
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 3001
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NoiseTex:
+        m_Texture: {fileID: 11700000, guid: 41974beaaddc547889b39d0022cb1d07, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NoiseTex2D:
+        m_Texture: {fileID: 2800000, guid: 2e25f51e1f31e4da8bdac5d08b0f578f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Alpha: 1
+    - _AlphaCombined: 1000
+    - _BasePos: -1
+    - _CullMode: 2
+    - _DeepAtten: 0
+    - _DoubleSidedBias: 0.05
+    - _FlaskBlurIntensity: 0
+    - _FlaskThickness: 0.05
+    - _FoamBottom: 1
+    - _FoamDensity: 0.5
+    - _FoamMaxPos: -0.35823938
+    - _FoamRaySteps: 7
+    - _FoamTurbulence: 1
+    - _FoamWeight: 10
+    - _Glossiness: 0
+    - _GlossinessInt: 0.5
+    - _Level: 1
+    - _LevelPos: -0.35823938
+    - _LiquidRaySteps: 10
+    - _Metallic: 0
+    - _Muddy: 0.976
+    - _Radius: 0.5
+    - _SmokeAtten: 2
+    - _SmokeRaySteps: 5
+    - _SmokeSpeed: 5
+    - _Sparkling: 1
+    - _SparklingIntensity: 0
+    - _SparklingThreshold: 1
+    - _Topology: 0
+    - _Turbulence: 1
+    - _Turbulence2: 1
+    - _TurbulenceSpeed: 1
+    - _UpperLimit: 0.01828887
+    - _ZTestMode: 4
+    m_Colors:
+    - _Bounds: {r: 1, g: 1, b: 1, a: 1}
+    - _Center: {r: 10.21, g: 0.366, b: -16.821, a: 0}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color1: {r: 1, g: 0.014462607, b: 0.0047169924, a: 0.77254903}
+    - _Color2: {r: 1, g: 1, b: 1, a: 0}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
+    - _FlaskColor: {r: 0, g: 0, b: 0, a: 1}
+    - _FlaskThickness: {r: 1, g: 1, b: 1, a: 0}
+    - _FoamColor: {r: 0.9622642, g: 0.13163051, b: 0.13163051, a: 0.65}
+    - _GlossinessInt: {r: 8.872, g: 32, b: 0.3, a: 0}
+    - _Scale: {r: 0.34173778, g: 0.25151902, b: 0.13669512, a: 2.7339022}
+    - _Size: {r: 0.9331818, g: 1.4631101, b: 0.25714257, a: 0.4665909}
+    - _SmokeColor: {r: 0.7, g: 0.7, b: 0.7, a: 0.25}
+    - _Turbulence: {r: 0.024, g: 0.424, b: 12.566371, a: 0}
+    - _ViewDir: {r: 0, g: 0, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!4 &443728941 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8556351090711157952, guid: 791623a77fac5ff43a51dacd3b3d4993, type: 3}
@@ -368,91 +460,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2499092351749736606, guid: 42ff4847176947845a41b0c1d8cebc81, type: 3}
   m_PrefabInstance: {fileID: 4231624929474840275}
   m_PrefabAsset: {fileID: 0}
---- !u!21 &668439083
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: LiquidVolumeDefault(Clone)
-  m_Shader: {fileID: 4800000, guid: be9d7fbb2c1ef43308f35fb0a12bbb88, type: 3}
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 3001
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _NoiseTex:
-        m_Texture: {fileID: 11700000, guid: 41974beaaddc547889b39d0022cb1d07, type: 2}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _NoiseTex2D:
-        m_Texture: {fileID: 2800000, guid: 2e25f51e1f31e4da8bdac5d08b0f578f, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _Alpha: 1
-    - _AlphaCombined: 1000
-    - _BasePos: -1
-    - _CullMode: 2
-    - _DeepAtten: 0
-    - _DoubleSidedBias: 0.05
-    - _FlaskBlurIntensity: 0
-    - _FlaskThickness: 0.05
-    - _FoamBottom: 1
-    - _FoamDensity: 0.5
-    - _FoamMaxPos: -0.3582392
-    - _FoamRaySteps: 7
-    - _FoamTurbulence: 1
-    - _FoamWeight: 10
-    - _Glossiness: 0
-    - _GlossinessInt: 0.5
-    - _Level: 1
-    - _LevelPos: -0.3582392
-    - _LiquidRaySteps: 10
-    - _Metallic: 0
-    - _Muddy: 0.976
-    - _Radius: 0.5
-    - _SmokeAtten: 2
-    - _SmokeRaySteps: 5
-    - _SmokeSpeed: 5
-    - _Sparkling: 1
-    - _SparklingIntensity: 0
-    - _SparklingThreshold: 1
-    - _Topology: 0
-    - _Turbulence: 1
-    - _Turbulence2: 1
-    - _TurbulenceSpeed: 1
-    - _UpperLimit: 0.01828887
-    - _ZTestMode: 4
-    m_Colors:
-    - _Bounds: {r: 1, g: 1, b: 1, a: 1}
-    - _Center: {r: 10.21, g: 0.366, b: -16.821, a: 0}
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Color1: {r: 1, g: 0.014462607, b: 0.0047169924, a: 0.77254903}
-    - _Color2: {r: 1, g: 1, b: 1, a: 0}
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
-    - _FlaskColor: {r: 0, g: 0, b: 0, a: 1}
-    - _FlaskThickness: {r: 1, g: 1, b: 1, a: 0}
-    - _FoamColor: {r: 0.9622642, g: 0.13163051, b: 0.13163051, a: 0.65}
-    - _GlossinessInt: {r: 8.872, g: 32, b: 0.3, a: 0}
-    - _Scale: {r: 0.34173787, g: 0.25151908, b: 0.13669515, a: 2.733903}
-    - _Size: {r: 0.93318164, g: 1.4631097, b: 0.2571425, a: 0.46659082}
-    - _SmokeColor: {r: 0.7, g: 0.7, b: 0.7, a: 0.25}
-    - _Turbulence: {r: 0.024, g: 0.424, b: 12.566371, a: 3.1415927}
-    - _ViewDir: {r: 0, g: 0, b: 1, a: 1}
-  m_BuildTextureStacks: []
 --- !u!1 &685865115
 GameObject:
   m_ObjectHideFlags: 3
@@ -1044,7 +1051,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9052452810787415018, guid: 2af0bd0d9c4b4be4fac70825014bdf58, type: 3}
   m_PrefabInstance: {fileID: 1249413019}
   m_PrefabAsset: {fileID: 0}
---- !u!21 &1249622304
+--- !u!21 &1313362342
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -1053,9 +1060,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: LiquidVolumeDefault(Clone)
   m_Shader: {fileID: 4800000, guid: be9d7fbb2c1ef43308f35fb0a12bbb88, type: 3}
-  m_ValidKeywords:
-  - LIQUID_VOLUME_CYLINDER
-  - LIQUID_VOLUME_NON_AABB
+  m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 5
   m_EnableInstancingVariants: 0
@@ -1337,7 +1342,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 0.5009709, y: 1}
+    m_SensorSize: {x: 0.5, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -1503,7 +1508,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 0.5009709, y: 1}
+    m_SensorSize: {x: 0.5, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -1538,7 +1543,7 @@ PrefabInstance:
     - target: {fileID: 5631982237501380270, guid: ff57882248a5cba43af5191c94813c7c, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1249622304}
+      objectReference: {fileID: 1313362342}
     - target: {fileID: 6244815275422742916, guid: ff57882248a5cba43af5191c94813c7c, type: 3}
       propertyPath: m_Name
       value: PopsicleMold
@@ -1602,7 +1607,7 @@ PrefabInstance:
     - target: {fileID: 9200289968219341332, guid: ff57882248a5cba43af5191c94813c7c, type: 3}
       propertyPath: liqMat
       value: 
-      objectReference: {fileID: 668439083}
+      objectReference: {fileID: 1313362342}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff57882248a5cba43af5191c94813c7c, type: 3}
 --- !u!114 &1969132783 stripped
@@ -1662,7 +1667,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 0.5009709, y: 1}
+    m_SensorSize: {x: 0.5, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -1952,6 +1957,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 963194225}
     - target: {fileID: 699059482365680827, guid: b28282dcea49420479d28771e40a2f01, type: 3}
+      propertyPath: putButton
+      value: 
+      objectReference: {fileID: 404770350}
+    - target: {fileID: 699059482365680827, guid: b28282dcea49420479d28771e40a2f01, type: 3}
       propertyPath: checkButton
       value: 
       objectReference: {fileID: 664340148}
@@ -2121,37 +2130,21 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1600615272}
-    - target: {fileID: 1020307066527307468, guid: 42ff4847176947845a41b0c1d8cebc81, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1087584008946697946, guid: 42ff4847176947845a41b0c1d8cebc81, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1087584008946697946, guid: 42ff4847176947845a41b0c1d8cebc81, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1087584008946697946, guid: 42ff4847176947845a41b0c1d8cebc81, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1600615272}
-    - target: {fileID: 1087584008946697946, guid: 42ff4847176947845a41b0c1d8cebc81, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1087584008946697946, guid: 42ff4847176947845a41b0c1d8cebc81, type: 3}
+    - target: {fileID: 2519114896678144337, guid: 42ff4847176947845a41b0c1d8cebc81, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 64392566}
+    - target: {fileID: 2519114896678144337, guid: 42ff4847176947845a41b0c1d8cebc81, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: StartFreezingPopsicle
+      value: PutPopsicleInFreezer
       objectReference: {fileID: 0}
-    - target: {fileID: 1087584008946697946, guid: 42ff4847176947845a41b0c1d8cebc81, type: 3}
+    - target: {fileID: 2519114896678144337, guid: 42ff4847176947845a41b0c1d8cebc81, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: C_GameManager, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 1087584008946697946, guid: 42ff4847176947845a41b0c1d8cebc81, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
+      value: Player, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2762451141247948501, guid: 42ff4847176947845a41b0c1d8cebc81, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -2161,10 +2154,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1600615272}
-    - target: {fileID: 4231624930328462571, guid: 42ff4847176947845a41b0c1d8cebc81, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: StartMakingPopsicle
-      objectReference: {fileID: 0}
     - target: {fileID: 4231624931107035970, guid: 42ff4847176947845a41b0c1d8cebc81, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -2257,10 +2246,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1600615272}
-    - target: {fileID: 8256259521269344408, guid: 42ff4847176947845a41b0c1d8cebc81, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 1614
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42ff4847176947845a41b0c1d8cebc81, type: 3}
 --- !u!1 &4231624929474840276 stripped
@@ -2458,6 +2443,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1287193320508143102, guid: f97e06276277b024b8ef281caa9d534a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.967
+      objectReference: {fileID: 0}
     - target: {fileID: 3628780552712850154, guid: f97e06276277b024b8ef281caa9d534a, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -2505,6 +2494,34 @@ PrefabInstance:
     - target: {fileID: 4113989895569789008, guid: f97e06276277b024b8ef281caa9d534a, type: 3}
       propertyPath: m_Name
       value: Freezer
+      objectReference: {fileID: 0}
+    - target: {fileID: 6804356728749196328, guid: f97e06276277b024b8ef281caa9d534a, type: 3}
+      propertyPath: m_Size.x
+      value: 0.443256
+      objectReference: {fileID: 0}
+    - target: {fileID: 6804356728749196328, guid: f97e06276277b024b8ef281caa9d534a, type: 3}
+      propertyPath: m_Size.y
+      value: 1.6936544
+      objectReference: {fileID: 0}
+    - target: {fileID: 6804356728749196328, guid: f97e06276277b024b8ef281caa9d534a, type: 3}
+      propertyPath: m_Size.z
+      value: 1.4123111
+      objectReference: {fileID: 0}
+    - target: {fileID: 6804356728749196328, guid: f97e06276277b024b8ef281caa9d534a, type: 3}
+      propertyPath: m_Center.x
+      value: 0.27837205
+      objectReference: {fileID: 0}
+    - target: {fileID: 6804356728749196328, guid: f97e06276277b024b8ef281caa9d534a, type: 3}
+      propertyPath: m_Center.y
+      value: -0.3468272
+      objectReference: {fileID: 0}
+    - target: {fileID: 6804356728749196328, guid: f97e06276277b024b8ef281caa9d534a, type: 3}
+      propertyPath: m_Center.z
+      value: 0.04927975
+      objectReference: {fileID: 0}
+    - target: {fileID: 7309366076274565266, guid: f97e06276277b024b8ef281caa9d534a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.967
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f97e06276277b024b8ef281caa9d534a, type: 3}

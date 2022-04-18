@@ -8,7 +8,7 @@ public class PopsicleMold : MonoBehaviour
 {
     public LiquidVolume liquidVolume;
     public event EventHandler OnJuiceFilled;
-    BoxCollider moldCollider;
+    public BoxCollider moldCollider;
     [SerializeField] ParticleSystem fillupParticle;
 
     private void Start()

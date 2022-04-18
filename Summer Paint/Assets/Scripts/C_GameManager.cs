@@ -25,6 +25,7 @@ public class C_GameManager : MonoBehaviour
     public GameObject popsicleStick;
     public event EventHandler OnJuiceSelected;
     [SerializeField] GameObject checkButton;
+    [SerializeField] GameObject putButton;
     private Animator gameManagerAnimator;
     public static C_GameManager instance;
    
@@ -57,7 +58,7 @@ public class C_GameManager : MonoBehaviour
     private void C_GameManager_OnStickPlaced(object sender, EventArgs e)
     {
         gameState=State.freezing;
-        ActivateCheckButton(true);
+        ActivateButton(true,checkButton);
 
     }
 
@@ -113,16 +114,15 @@ public class C_GameManager : MonoBehaviour
         
     }
 
-    private void ActivateCheckButton(bool isActive)
+    private void ActivateButton(bool isActive,GameObject button)
     {
         if (isActive)
-        {
-           
-            checkButton.GetComponent<RectTransform>().DOAnchorPos3DX(420f, 1.25f, false);
+        {        
+            button.GetComponent<RectTransform>().DOAnchorPos3DX(420f, 1.25f, false);
         }
         else
         {
-            checkButton.GetComponent<RectTransform>().DOAnchorPos3DX(1614f, 1.25f, false);
+            button.GetComponent<RectTransform>().DOAnchorPos3DX(1614f, 1.25f, false);
         }
     }
 
@@ -147,7 +147,6 @@ public class C_GameManager : MonoBehaviour
             case "Orange": ActivateSelectedJuice(juiceList[2]);
                 break;
         }
-
         OnJuiceSelected?.Invoke(this, EventArgs.Empty);
         gameState = State.moldFilling;
         
@@ -156,13 +155,17 @@ public class C_GameManager : MonoBehaviour
     public void StartFreezingPopsicle()
     {
         popsicleMold.transform.DOScale(0.2f, 1f);
+        popsicleMold.moldCollider.enabled = true;
         popsicleMold.transform.parent = cameraObj.transform; // Assign as child of camera to pickup mold
         gameManagerAnimator.SetTrigger("StartFreezingPopsicle"); // Trigger state camera turning
         
         gameplayMenu.SetActive(false);
-        ActivateCheckButton(false);
+        ActivateButton(false,checkButton);
+        ActivateButton(true, putButton);
        
     }
+
+
 
 
 }
