@@ -80,15 +80,10 @@ public class Player : MonoBehaviour
             case C_GameManager.State.freezing:
                 if (swapDirection == "Up")
                 {
-                    PutPopsicleInFreezer();
+                    StartCoroutine(FreezePopsicle(2.5f));
                 }
                 break;
-            case C_GameManager.State.gettingFromFreezer:
-                if (swapDirection == "Down")
-                {
-                    PullPopsicleFromFreezer();
-                }
-                break;
+
         }
     }
 
@@ -165,6 +160,14 @@ public class Player : MonoBehaviour
         spillAmount -= Time.deltaTime;
         spillFillImage.GetComponent<Image>().fillAmount = spillAmount;
         juiceParticle.Stop();
+    }
+
+
+    IEnumerator FreezePopsicle(float freezeTime)
+    {
+        PutPopsicleInFreezer();
+        yield return new WaitForSeconds(freezeTime);
+        PullPopsicleFromFreezer();
     }
 
 

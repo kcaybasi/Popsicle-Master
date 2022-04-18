@@ -9,12 +9,14 @@ public class Freezer : MonoBehaviour
     public event EventHandler OnFreezingDone;
     [SerializeField] GameObject freezerDoor;
 
+
+
     private void OnTriggerEnter(Collider other)
     {
-        StartCoroutine(StartFreezingSequence());
-       
+        StartCoroutine(StartFreezingSequence());      
     }
 
+    
 
     IEnumerator StartFreezingSequence()
     {

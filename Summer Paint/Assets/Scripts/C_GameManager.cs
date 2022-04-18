@@ -14,13 +14,14 @@ public class C_GameManager : MonoBehaviour
 
     [Header("Game States")]
     public State gameState=State.gettingOrder;
-    public enum State { gettingOrder,moldFilling, stickPlacing, freezing , gettingFromFreezer ,finishingOrder}
+    public enum State { gettingOrder,moldFilling, stickPlacing, freezing  ,finishingOrder}
     private Animator gameManagerAnimator;
 
     [Header("Game Events")]
 
     [SerializeField] UnityEvent OnGameStarted;
     public event EventHandler OnJuiceSelected;
+    public event EventHandler OnGameFinish;
     public static C_GameManager instance;
    
     [Header("GameObjects")]
@@ -30,6 +31,7 @@ public class C_GameManager : MonoBehaviour
     public PopsicleStick popsicleStick;
     public Freezer freezer;
     public GameObject swipeDetector;
+    [SerializeField] ParticleSystem confetti;
  
     [Header("UI Menu")]
 
@@ -65,7 +67,7 @@ public class C_GameManager : MonoBehaviour
 
     private void Freezer_OnFreezingDone(object sender, EventArgs e)
     {
-        gameState = State.gettingFromFreezer;
+        gameState = State.finishingOrder;
         ActivateButton(finishButton, 1612f, 0f, true);
        
     }
@@ -140,6 +142,9 @@ public class C_GameManager : MonoBehaviour
         popsicleMold.moldCollider.enabled = true;
         popsicleMold.transform.parent = cameraObj.transform;
     }
+
+
+
     #region Button Functions
 
     public void StartMakingPopsicle()
@@ -180,10 +185,19 @@ public class C_GameManager : MonoBehaviour
     public void FinishOrder()
     {
         gameState = State.finishingOrder;
-        
         gameManagerAnimator.SetTrigger("ReturnToStand");
+        ActivateButton(finishButton, 1612f, 0f, false);
+        StartCoroutine(FinishGame(2f));
     }
 
+
+    IEnumerator FinishGame(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        OnGameFinish?.Invoke(this, EventArgs.Empty);
+        confetti.Play();
+        OpenMenu(gameOverMenu);
+    }
 
     #endregion
 
