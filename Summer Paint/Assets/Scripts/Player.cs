@@ -80,7 +80,7 @@ public class Player : MonoBehaviour
             case C_GameManager.State.freezing:
                 if (swapDirection == "Up")
                 {
-                    StartCoroutine(FreezePopsicle(2.5f));
+                    StartCoroutine(FreezePopsicle(2.2f));
                 }
                 break;
 
@@ -180,10 +180,10 @@ public class Player : MonoBehaviour
 
     public void PullPopsicleFromFreezer()
     {
-        playerObject.transform.DOMoveZ(-26, 0.5f, false);
-        playerObject.transform.DORotate(new Vector3(90f, 0, 0), 0.5f, RotateMode.Fast);
+        playerObject.transform.DOMoveZ(-26, 1f, false);            
         playerObject.transform.GetChild(4).gameObject.SetActive(true);
+     
+        
     }
-
 
 }

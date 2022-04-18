@@ -54,6 +54,8 @@ public class C_GameManager : MonoBehaviour
 
     private void Awake()
     {
+        Application.targetFrameRate = 60;
+        QualitySettings.vSyncCount = 0;
         instance = this;
     }
 
@@ -141,6 +143,7 @@ public class C_GameManager : MonoBehaviour
     private void PrepareMoldToFreeze()
     {
         popsicleMold.transform.DOScale(0.2f, 1f);
+        popsicleMold.transform.DORotate(new Vector3(90f, 0, 0), 1f, RotateMode.Fast);
         popsicleMold.moldCollider.enabled = true;
         popsicleMold.transform.parent = cameraObj.transform;
     }
@@ -185,10 +188,12 @@ public class C_GameManager : MonoBehaviour
 
     public void FinishOrder()
     {
+        
         gameState = State.finishingOrder;
         gameManagerAnimator.SetTrigger("ReturnToStand");
         ActivateButton(finishButton, 1612f, 0f, false);
         StartCoroutine(FinishGame(2f));
+        
     }
 
 
