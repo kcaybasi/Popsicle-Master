@@ -35,8 +35,6 @@ public class C_GameManager : MonoBehaviour
     public Freezer freezer;
     public GameObject swipeDetector;
 
-   
- 
     [Header("UI")]
 
     [SerializeField] GameObject mainMenu;
@@ -48,6 +46,7 @@ public class C_GameManager : MonoBehaviour
     [SerializeField] GameObject finishButton;
 
     [SerializeField] RectTransform swipeArrow;
+    private bool isSettingsOpen;
 
     [Header("Juice Holders")]
 
@@ -219,6 +218,28 @@ public class C_GameManager : MonoBehaviour
         OnGameFinish?.Invoke(this, EventArgs.Empty);
         confetti.Play();
         OpenMenu(gameOverMenu);
+    }
+
+
+    public void OpenSettingMenu()
+    {
+        if (!isSettingsOpen)
+        {
+            GameObject clickedButton = EventSystem.current.currentSelectedGameObject;
+            clickedButton.transform.GetChild(1).gameObject.SetActive(true);
+            clickedButton.transform.GetChild(2).gameObject.SetActive(true);
+
+            isSettingsOpen = true;
+        }
+        else
+        {
+            GameObject clickedButton = EventSystem.current.currentSelectedGameObject;
+            clickedButton.transform.GetChild(1).gameObject.SetActive(false);
+            clickedButton.transform.GetChild(2).gameObject.SetActive(false);
+            isSettingsOpen = false;
+        }
+
+
     }
 
 
