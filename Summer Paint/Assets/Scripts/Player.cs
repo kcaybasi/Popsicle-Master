@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
+using MoreMountains.NiceVibrations;
 
 
 public class Player : MonoBehaviour
@@ -135,6 +136,7 @@ public class Player : MonoBehaviour
                             playerObject.transform.position.y + touch.deltaPosition.y * slideSpeed * Time.deltaTime,
                             playerObject.transform.position.z - touch.deltaPosition.x * slideSpeed * Time.deltaTime);
                 playerObject.transform.position = slideVector;
+                MMVibrationManager.Haptic(HapticTypes.SoftImpact);
                
              
             }
