@@ -45,6 +45,8 @@ public class Player : MonoBehaviour
         popsicleStick.OnStickPlaced += PopsicleStick_OnStickPlaced;
     }
 
+
+  
     private void SwipeDetector_OnSwipe(SwipeData obj)
     {
         swapDirection = obj.Direction.ToString();
@@ -69,11 +71,15 @@ public class Player : MonoBehaviour
 
     }
 
+    
+
     private void Update()
     {
         ControlPlayerObject();
     }
 
+
+    
 
     private void ControlPlayerObject()
     {
@@ -154,6 +160,11 @@ public class Player : MonoBehaviour
         playerObject.transform.position = clampedPos;
     }
 
+
+    
+
+
+   
     private void PourJuice()
     {
         spillFillImage.SetActive(true);
@@ -174,7 +185,9 @@ public class Player : MonoBehaviour
         juiceParticle.Stop();
     }
 
+   
 
+   
 
     IEnumerator FreezePopsicle(float freezeTime)
     {
@@ -197,5 +210,7 @@ public class Player : MonoBehaviour
         playerObject.transform.DORotate(new Vector3(90, 0, 0), 0.65f, RotateMode.Fast);
         playerObject.transform.GetChild(4).gameObject.SetActive(true);
     }
+
+    
 
 }

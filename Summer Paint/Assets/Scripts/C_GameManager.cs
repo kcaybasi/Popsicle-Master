@@ -6,6 +6,7 @@ using UnityEngine;
 using DG.Tweening;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 
 
@@ -33,24 +34,29 @@ public class C_GameManager : MonoBehaviour
     public PopsicleStick popsicleStick;
     public Freezer freezer;
     public GameObject swipeDetector;
-    [SerializeField] ParticleSystem confetti;
+
+   
  
-    [Header("UI Menu")]
+    [Header("UI")]
 
     [SerializeField] GameObject mainMenu;
     [SerializeField] GameObject gameplayMenu;
     [SerializeField] GameObject gameOverMenu;
     [SerializeField] List<GameObject> menuList = new List<GameObject>();
 
-    [Header("Buttons")]
-
     [SerializeField] GameObject checkButton;
     [SerializeField] GameObject finishButton;
+
+    [SerializeField] RectTransform swipeArrow;
 
     [Header("Juice Holders")]
 
     [SerializeField] List<GameObject> juiceList = new List<GameObject>();
     public GameObject selectedJuice;
+
+    [Header("VFX")]
+
+    [SerializeField] ParticleSystem confetti;
 
     private void Awake()
     {
@@ -150,7 +156,7 @@ public class C_GameManager : MonoBehaviour
 
  
 
-    #region Button Functions
+    // Button Functions 
 
     public void StartMakingPopsicle()
     {
@@ -182,8 +188,18 @@ public class C_GameManager : MonoBehaviour
         gameManagerAnimator.SetTrigger("StartFreezingPopsicle"); // Trigger state camera turning
         gameplayMenu.SetActive(false);
         ActivateButton(checkButton, 1614f, 420f, false);
+        StartCoroutine(PlaySwipeAnimation());
+
+    }
 
 
+    IEnumerator PlaySwipeAnimation()
+    {
+
+        yield return new WaitForSeconds(0.5f);
+        swipeArrow.gameObject.SetActive(true);
+        swipeArrow.DOAnchorPos3DY(817f, 1f, false);
+        swipeArrow.transform.GetComponent<Image>().DOFade(0, 1f);
     }
 
     public void FinishOrder()
@@ -211,6 +227,6 @@ public class C_GameManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
-    #endregion
+  
 
 }
