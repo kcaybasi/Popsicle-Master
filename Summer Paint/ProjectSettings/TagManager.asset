@@ -10,6 +10,13 @@ TagManager:
   - Strawberry
   - Orange
   - StickPlace
+  - cam1
+  - cam2
+  - cam3
+  - Up
+  - Left
+  - Right
+  - Down
   layers:
   - Default
   - TransparentFX

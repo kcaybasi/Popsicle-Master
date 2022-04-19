@@ -228,6 +228,7 @@ public class C_GameManager : MonoBehaviour
             GameObject clickedButton = EventSystem.current.currentSelectedGameObject;
             clickedButton.transform.GetChild(1).gameObject.SetActive(true);
             clickedButton.transform.GetChild(2).gameObject.SetActive(true);
+            clickedButton.transform.GetChild(3).gameObject.SetActive(true);
 
             isSettingsOpen = true;
         }
@@ -236,6 +237,7 @@ public class C_GameManager : MonoBehaviour
             GameObject clickedButton = EventSystem.current.currentSelectedGameObject;
             clickedButton.transform.GetChild(1).gameObject.SetActive(false);
             clickedButton.transform.GetChild(2).gameObject.SetActive(false);
+            clickedButton.transform.GetChild(3).gameObject.SetActive(false);
             isSettingsOpen = false;
         }
 
