@@ -88,6 +88,7 @@ public class Player : MonoBehaviour
                     if (!isFreezingDone)
                     {
                         StartCoroutine(FreezePopsicle(2.2f));
+                        isFreezingDone = true;
                     }
                     
                 }
@@ -176,25 +177,24 @@ public class Player : MonoBehaviour
     IEnumerator FreezePopsicle(float freezeTime)
     {
         PutPopsicleInFreezer();
-        yield return new WaitForSeconds(freezeTime);
-        PullPopsicleFromFreezer();
-        isFreezingDone = true;
+        yield return new WaitForSeconds(freezeTime);       
+        PullPopsicleFromFreezer();    
     }
 
 
     public void PutPopsicleInFreezer()
     {
-        playerObject.transform.DOMoveZ(-31f, 1f, false);
         playerObject.transform.DORotate(new Vector3(0f, 0, 0), 1f, RotateMode.Fast);
-        
+        playerObject.transform.DOMoveZ(-31f, 1f, false);
+
     }
 
     public void PullPopsicleFromFreezer()
     {
         playerObject.transform.DOMoveZ(-26f, 1f, false);
-        playerObject.transform.DORotate(new Vector3(90, 0, 0), 1f, RotateMode.Fast);   
+        playerObject.transform.DORotate(new Vector3(90, 0, 0), 0.65f, RotateMode.Fast);
         playerObject.transform.GetChild(4).gameObject.SetActive(true);
-              
+
     }
 
 }
