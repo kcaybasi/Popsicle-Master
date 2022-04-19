@@ -13,7 +13,10 @@ public class AudioManager : MonoBehaviour
     {
         instance = this;
     }
-
+    private void Start()
+    {
+        isHapticEnabled = true;
+    }
 
     public void PlayDrippingSound()
     {
