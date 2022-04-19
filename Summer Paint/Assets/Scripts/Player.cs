@@ -19,16 +19,21 @@ public class Player : MonoBehaviour
     [SerializeField] PopsicleMold popsicleMold;
     [SerializeField] GameObject playerObject;
     [SerializeField] PopsicleStick popsicleStick;
-    private string swapDirection;
+   
     private C_GameManager gameManager;
   
 
-    [Header("Juice Pouring")]
+    [Header("Juice Pour Part")]
 
     [SerializeField] float holdtimer;
     GameObject spillFillImage;
     ParticleSystem juiceParticle;
- 
+
+    [Header("Freeze Part")]
+    private string swapDirection;
+    private bool isFreezingDone;
+
+
 
     private void Start()
     {     
@@ -80,7 +85,11 @@ public class Player : MonoBehaviour
             case C_GameManager.State.freezing:
                 if (swapDirection == "Up")
                 {
-                    StartCoroutine(FreezePopsicle(2.2f));
+                    if (!isFreezingDone)
+                    {
+                        StartCoroutine(FreezePopsicle(2.2f));
+                    }
+                    
                 }
                 break;
 
@@ -169,20 +178,23 @@ public class Player : MonoBehaviour
         PutPopsicleInFreezer();
         yield return new WaitForSeconds(freezeTime);
         PullPopsicleFromFreezer();
+        isFreezingDone = true;
     }
 
 
     public void PutPopsicleInFreezer()
     {
-        playerObject.transform.DOMoveZ(-27.75362f, 1f, false);
+        playerObject.transform.DOMoveZ(-31f, 1f, false);
         playerObject.transform.DORotate(new Vector3(0f, 0, 0), 1f, RotateMode.Fast);
+        
     }
 
     public void PullPopsicleFromFreezer()
     {
-        playerObject.transform.DOMoveZ(-26, 1f, false);            
+        playerObject.transform.DOMoveZ(-26f, 1f, false);
+        playerObject.transform.DORotate(new Vector3(90, 0, 0), 0.5f, RotateMode.Fast);   
         playerObject.transform.GetChild(4).gameObject.SetActive(true);
-     
+        
         
     }
 

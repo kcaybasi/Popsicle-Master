@@ -8,12 +8,17 @@ public class Freezer : MonoBehaviour
 {
     public event EventHandler OnFreezingDone;
     [SerializeField] GameObject freezerDoor;
+    private bool isFreezingDone;
 
 
 
     private void OnTriggerEnter(Collider other)
     {
-        StartCoroutine(StartFreezingSequence());      
+        if (!isFreezingDone)
+        {
+            StartCoroutine(StartFreezingSequence());
+        }
+            
     }
 
     
@@ -24,5 +29,6 @@ public class Freezer : MonoBehaviour
         yield return new WaitForSeconds(1.5f);
         freezerDoor.transform.DOLocalRotate(new Vector3(-90f, 0f, -110f), 1f, RotateMode.Fast);
         OnFreezingDone?.Invoke(this, EventArgs.Empty);
+        isFreezingDone = true;
     }
 }
