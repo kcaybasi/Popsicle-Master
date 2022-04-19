@@ -194,7 +194,6 @@ public class Player : MonoBehaviour
         playerObject.transform.DOMoveZ(-26f, 1f, false);
         playerObject.transform.DORotate(new Vector3(90, 0, 0), 0.65f, RotateMode.Fast);
         playerObject.transform.GetChild(4).gameObject.SetActive(true);
-
     }
 
 }
